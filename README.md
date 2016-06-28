@@ -1,5 +1,7 @@
 # Dissertation-Third-Year
 My third year project, BOMBE and Enigma simulation
+
+{
 Engima set up
 
 The main file will have each component included within it
@@ -61,3 +63,4 @@ takes a number and outputs the corresponding value for the return from the refle
 returns a boolean that dictates if the next rotor should rotate
 - rotate()
 rotates the rotor one place
+}
