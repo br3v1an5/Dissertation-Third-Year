@@ -1,0 +1,5 @@
+/*
+Main enigma file
+used to coordinate all others
+used to encode and decode cyphertext
+*/
