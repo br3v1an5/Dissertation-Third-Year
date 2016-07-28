@@ -22,11 +22,4 @@ g++ main.cpp -o main
 int main()
 {
     std::cout << "Hello world!" << std::endl;
-
-    setup();
-
-    int value = add_one(5);
-
-    using namespace std;
-    cout << "The value back is " << value << endl;
 }
