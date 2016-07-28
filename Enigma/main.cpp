@@ -25,5 +25,5 @@ g++ main.cpp -o main
 
 int main()
 {
-    std::cout << "Hello world!" << std::endl;
+    std::cout << "Hello world!" << std::end;
 }
