@@ -16,6 +16,10 @@ g++ main.cpp -o main
 #include "rotor_three.cpp"
 #include "rotor_four.cpp"
 #include "rotor_five.cpp"
+#include "rotor_six.cpp"
+#include "rotor_seven.cpp"
+#include "rotor_eight.cpp"
+#include "converter.cpp"
 
 #include <iostream>
 
