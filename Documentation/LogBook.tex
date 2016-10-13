@@ -1,0 +1,52 @@
+
+\documentclass{scrartcl}
+\reversemarginpar 
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} 
+\usepackage[nochapters]{classicthesis} 
+\usepackage[LabelsAligned]{currvita} 
+\renewcommand{\cvheadingfont}{\LARGE\color{Blue}}
+\usepackage{hyperref}
+\hypersetup{colorlinks, breaklinks, urlcolor=Blue, linkcolor=Blue} 
+\newlength{\datebox}\settowidth{\datebox}{Spring 2011}
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3 
+\vspace{0.5em}} 
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright
+\footnotesize{#1}\par\normalsize\vspace{1em}} 
+
+%----------------------------------------------------------------------------------------
+
+
+
+\begin{document}
+
+
+
+\thispagestyle{empty} % Stop the page count at the bottom of the first page
+
+
+
+%----------------------------------------------------------------------------------------
+
+%	NAME AND CONTACT INFORMATION SECTION
+
+%----------------------------------------------------------------------------------------
+
+
+
+\begin{cv}{\spacedallcaps{Log Book: Enigma and BOMBE}}\vspace{1em} % Your name
+
+
+
+\noindent\spacedlowsmallcaps{13th October}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
+
+
+
+\Description{Meeting with Matthew Johnson at 10am, meeting was successful. talked about what I have managed over the summer. enigma is designed but not coded. the aim is to have a fairly good idea about how to design the BOMBE by next week. we will be talking about the papers that go into detail about the BOMBE.}\vspace{1em} % Goal text
+
+
+
+\end{cv}
+
+
+
+\end{document}
