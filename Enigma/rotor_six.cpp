@@ -5,18 +5,12 @@ map from input to output
 based on the input settings
 */
 
-int mapping[26];
-int notch1;
-int notch2
-int turnover1;
-int turnover2;
+int six_mapping [26] = {9, 15, 6, 21, 14, 20, 12, 5, 24, 16, 1, 4, 13, 7, 25, 17, 3, 10, 0, 18, 23, 11, 8, 2, 19, 22};
 
-mapping[26] = [9, 15, 6, 21, 14, 20, 12, 5, 24, 16, 1, 4, 13, 7, 25, 17, 3, 10, 0, 18, 23, 11, 8, 2, 19, 22];
+int six_notch1 = 7;
 
-notch1 = 7;
+int six_notch2 = 20;
 
-notch2 = 20;
+int six_turnover1 = 25;
 
-turnover1 = 25;
-
-turnover2 = 12
+int six_turnover2 = 12;

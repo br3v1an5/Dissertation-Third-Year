@@ -10,7 +10,7 @@ based on the input settings
 int mapping_forward[26];
 int mapping_back[26];
 
-void setup(int connections[26]){
+int setup(int connections[26]){
 	/*
 	takes input from the main file
 	in the form of an array that contains all the different
@@ -44,6 +44,7 @@ void setup(int connections[26]){
 		counter_0++;
 		// the index is changed
 	}
+	return 1;
 }
 
 int plugboard_forward(int input){
