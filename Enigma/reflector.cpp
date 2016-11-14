@@ -8,25 +8,28 @@ based on the input settings
 int reflector[26];
 
 
-void setup(int connections[26]){
+int setup_reflector(int connections[26]){
 	/*
 	takes input from the main file
 	in the form of an array that contains all the different
 	connections and a 0 where the connection is unchanged
 	*/
 
-	counter_0 = 0;
+	int counter_0 = 0;
 	// set the counter to zero
 
-	for (int x : connections) {
+	for (int i = 0; i<26; i++) {
 		// interate through the input list
+		int currentChar = connections[i];
 
-		reflector[counter_0] = x;
+		reflector[counter_0] = currentChar;
 		// the connections are made
 	
 		counter_0++;
 		// increment the counter
 	}
+
+	return 0;
 }
 
 int get_reflection(int index){

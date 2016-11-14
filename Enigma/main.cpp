@@ -9,36 +9,42 @@ g++ -std=c++11 main.cpp -o main
 ./main
 */
 
-/*
+
 #include "plugboard.cpp"
+#include "plugboard.h"
+
 #include "reflector.cpp"
-*/
-#include "rotor_one.cpp"
-#include "rotor_two.cpp"
-#include "rotor_three.cpp"
-#include "rotor_four.cpp"
-#include "rotor_five.cpp"
-#include "rotor_six.cpp"
-#include "rotor_seven.cpp"
-#include "rotor_eight.cpp"
+#include "reflector.h"
+
+#include "rotors.cpp"
+
 #include "converter.cpp"
+#include "converter.h"
 
 #include <iostream>
 #include <fstream>
 #include <string>
 using namespace std;
 
-int setup(char* file_name)
+int input_data[58];
+int plugboard_data[26];
+int reflector_data[26];
+int rotors_data[3];
+int displacement_data[3];
+char* plaintext;
+char* ciphertext;
+
+/*
+char* validate_input(char* input){
+	char* output = boost::erase_all(input, "1");
+}
+*/
+
+int setup()
 {
-	// take in a .txt file as a parameter that contains all the setup information and all the plaintext
+	// the text file being used for setup has a hardcoded name
 
-	int input_data[58];
-	int plugboard_data[26];
-	int reflector_data[26];
-	int rotors_data[3];
-	int displacement_data[3];
-
-	ifstream file(file_name);
+	ifstream file("setupFile.txt");
 	if(file.is_open())
 	{
 		for(int i = 0; i < 58; ++i)
@@ -49,12 +55,14 @@ int setup(char* file_name)
 
 	else cout << "Unable to open file";
 
+	/*
 	printf("Input:");
 	for (int x=0; x<57; x++)
 	{
 		printf(" %i,", input_data[x]);
 	}
 	printf(" %i\n", input_data[57]);
+	*/
 
 	for (int x=0; x<58; x++)
 	{
@@ -72,10 +80,11 @@ int setup(char* file_name)
 		}
 		if(53<x)
 		{
-		displacement_data[(x-55)] = input_data[x];
+			displacement_data[(x-55)] = input_data[x];
 		}
 	}
 
+	/*
 	printf("Plugboard:");
 	for (int x=0; x<25; x++)
 	{
@@ -103,22 +112,119 @@ int setup(char* file_name)
 		printf(" %i,", displacement_data[x]);
 	}
 	printf(" %i\n", displacement_data[2]);
-
-	/*
-	// take input for which rotors to use
-	printf("Rotors: %i, %i, %i\n", rotors[0], rotors[1], rotors[2]);
-
-	// take input for the displacement of each rotor from its start position
-	printf("Displacement of rotors: %i, %i, %i\n", displacement[0], displacement[1], displacement[2]);
 	*/
+	
 
 	return 1;
 }
 
-int main(int argc, char* argv[]) // or char** argv 
+int main(int argc, char* argv[])
 {
 	// ask for the name of a .txt file
 	// pass this name to the setup function
-	setup(argv[1]);
+	setup();
+
+	plaintext = argv[1];
+	ciphertext = argv[1];
+	printf("Plaintext: ");
+	printf("%s\n", plaintext);
+
+	setup_plugboard(plugboard_data);
+	// setup the plugboard
+
+	setup_reflector(reflector_data);
+	// setup the reflector
+
+	int toEncrypt;
+
+	for (int i=0; i<strlen(plaintext); i++){
+		//printf("%c\n", plaintext[i]);
+
+		toEncrypt =  convert_char_to_int(plaintext[i]);
+		// convert the chars to corresponding ints
+		//printf("Char to Int: %d\n", toEncrypt);
+
+		toEncrypt = plugboard_forward(toEncrypt);
+		// use the plugboard
+		//printf("After the Plugboard: %d\n", toEncrypt);
+
+		// store the first rotor
+		// used the first rotor
+		toEncrypt = rotors[
+			rotors_data[0] - 1][
+			(toEncrypt + displacement_data[0]) % 26];
+		//printf("After the first rotor: %d\n", toEncrypt);
+
+		// store the second rotor
+		// use the second rotor
+		toEncrypt = rotors[
+			rotors_data[1] - 1][
+			(toEncrypt + displacement_data[0]) % 26];
+		//printf("After the second rotor: %d\n", toEncrypt);
+
+		// store the third rotor
+		// use the thrid rotor
+		toEncrypt = rotors[
+			rotors_data[2] - 1][
+			(toEncrypt + displacement_data[0]) % 26];
+		//printf("After the third rotor: %d\n", toEncrypt);
+
+		// use the reflector
+		toEncrypt = get_reflection(toEncrypt);
+		//printf("After reflection: %d\n", toEncrypt);
+
+		// back through the third rotor
+		toEncrypt = get_rotor_reverse(rotors_data[0] - 1, toEncrypt);
+		//printf("After the third rotor: %d\n", toEncrypt);
+
+		// back through the second rotor
+		toEncrypt = get_rotor_reverse(rotors_data[1] - 1, toEncrypt);
+		//printf("After the second rotor: %d\n", toEncrypt);
+
+		// back through the first rotor
+		toEncrypt = get_rotor_reverse(rotors_data[2] - 1, toEncrypt);
+		//printf("After the first rotor: %d\n", toEncrypt);
+
+		// do turnover for all rotors
+
+		displacement_data[0] = displacement_data[0] + 1;
+		// turn the first rotor every time that it is used
+
+		if (displacement_data[0] == turnovers[rotors_data[0]][0] || displacement_data[0] == turnovers[rotors_data[0]][1]){
+			// if the first rotor reaches one if its turnover points then step the second rotor
+			displacement_data[1] = displacement_data[1] + 1;
+		}
+
+		if (displacement_data[0] + 1 % 26 == 0){
+			// if the first rotor has rotated fully then step the second rotor
+			displacement_data[0] = 0;
+			displacement_data[1] = displacement_data[1] + 1;
+		}
+
+		if (displacement_data[1] == turnovers[rotors_data[1]][0] || displacement_data[1] == turnovers[rotors_data[1]][1]){
+			// if the second rotor reaches one of its turnover points then step the thrid rotor
+			displacement_data[2] = displacement_data[2] + 1;
+		}
+
+		if (displacement_data[1] + 1 % 26 == 0){
+			// if the second rotor has rotated fully then step the third rotor
+			displacement_data[1] = 0;
+			displacement_data[2] = displacement_data[2] + 1;
+		}
+
+		// back through the plugboard
+		toEncrypt = plugboard_back(toEncrypt);
+		//printf("After the plugboard: %d\n", toEncrypt);
+
+		ciphertext[i] = convert_int_to_char(toEncrypt);
+		// convert the fully encrypted int back to a char
+
+		//printf("Done: %c\n", ciphertext[i]);
+		// print the encrypted letter
+	}
+
+	printf("Ciphertext: ");
+	printf("%s\n", ciphertext);	
+
 	return 1;
 }

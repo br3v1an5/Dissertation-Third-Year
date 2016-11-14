@@ -10,7 +10,7 @@ based on the input settings
 int mapping_forward[26];
 int mapping_back[26];
 
-int setup(int connections[26]){
+int setup_plugboard(int connections[26]){
 	/*
 	takes input from the main file
 	in the form of an array that contains all the different
@@ -20,10 +20,11 @@ int setup(int connections[26]){
 	int counter_0 = 0;
 	// the counter to keep track of the index
 
-	for (int x : connections) {
+	for (int i; i<26; i++) {
 		// interate through the input list
+		int currentChar = connections[i];
 
-		if (x == 0){
+		if (currentChar == 0){
 			// if the connection is not specified
 
 			mapping_forward[counter_0] = counter_0;
@@ -35,15 +36,16 @@ int setup(int connections[26]){
 		else{
 			// if the connection is specified
 
-			mapping_forward[counter_0] = x;
+			mapping_forward[counter_0] = currentChar;
 			// the forward connection is set
 
-			mapping_back[x] = counter_0;
+			mapping_back[currentChar] = counter_0;
 			// the backward connection is set
 		}
 		counter_0++;
 		// the index is changed
 	}
+
 	return 1;
 }
 
