@@ -10,7 +10,7 @@
 \author{David Budgen}
 \student{A.L. Gillies}
 \supervisor{M. Johnson}
-\degree{BSc Computer Science}
+\degree{MEng Computer Science}
 
 \date{}
 \begin{document}
@@ -21,17 +21,19 @@ These instructions give you guidelines for preparing the design paper.  DO NOT c
 
 The abstract must be a Structured Abstract with the headings {\bf Context/Background}, {\bf Aims}, {\bf Method}, and {\bf Proposed Solution}.  This section should not be no longer than a page, and having no more than two or three sentences under each heading is advised.
 \\
+\section{Abstract}
+
 {\bf Context/Background} - The world has changed significantly in the last fifty years. Ideas that were had before modern computing was fully realised need to be re-evaluated with a modern perspective. One such example is the Engima machine and it's counterpart, the BOMBE. What is the computational speed up from 1940 to now?\\
 talk about the background and why the project is being done.\\
-\\
+
 {\bf Aims} - The aim of this paper is to show the improvements of modern computing using the comparison of an antiquated design against several modern re-interpretations.\\
 what are the end goals?\\
-\\
+
 {\bf Method} - After both the engima and BOMBE are implemented they will then be improved on using modern techniques. Each will then be tested. The time taken for a standard engima machine to encrypt, the computerised version to encrypt and the parallelised version to encrypt will be compared to one another to give a good indication of the improvements over time.Another comparison will be made between the standard enigma, the computerised enigma and the parallelised enigma, this should re-enforce the indication of computer improvements\\
 how will we reach the end goals?\\
-\\
+
 {\bf Proposed Solution} - The enigma machine will be implemented through c++ code, this will form the baseline for a modern interpretation of the machine as it will not run anything in parallel. This code will then be parallelised using different modern techniques, these will then be used as the final comparison to show the significant increases in performance that any antiquated idea can expect.\\
-what is the system?\\
+what is the system?
 \end{abstract}
 
 \begin{keywords}
@@ -43,6 +45,38 @@ This section briefly introduces the project, the research question you are addre
 
 Note that the whole report, including the references, should not be longer than 12 pages in length (there is no penalty for short papers if the required content is included). There should be at least 5 referenced papers.
 
+\subsection{Description and Purpose}
+
+This project is to be an investigation into the possible improvements that can be gained on an antiquated technique by parallelisation against unparallelised and a time accurate representation. This will be done by first creating a modern equivalent of the antiquated technique. The modern equivalent will then be improved upon using parallelisation techniques. This is to be done on The Enigma Machine and the BOMBE.
+
+\subsection{What is the Enigma Machine?}
+
+The Enigma machine is...
+
+\subsection{What is the BOMBE?}
+
+The BOMBE is...
+
+\subsection{What are the parallelisation techniques?}
+
+They are...
+
+\subsection{Deliverables}
+
+\begin{table}[htb]
+\centering
+\caption{Deliverables}
+\vspace*{6pt}
+\label{units}
+\begin{tabular}{cccc}\hline\hline
+Unique ID & Deliverable & Description & Priority \\ \hline
+DL1 & Simulate the Enigma Machine & This is a description of a thing & HIGH \\
+DL2 & Simulate the Bombe & This is a description of a thing & HIGH \\
+DL3 & Show the correctness of the Enigma Machine & This is a description of a thing & HIGH \\
+DL4 & Show the correctness of the BOMBE & This is a description of a thing & HIGH \\
+\end{tabular}
+\end{table}
+
 \section{Design}
 
 This section presents the proposed solutions of the problems in detail. The design details should all be placed in this section. You may create a number of subsections, each focusing on one issue.
@@ -50,11 +84,8 @@ This section presents the proposed solutions of the problems in detail. The desi
 This section should be up to 8 pages in length.
 The rest of this section shows the formats of subsections as well as some general formatting information.  You should also consult the Word template.
 
-\subsection{Main Text}
-
 The font used for the main text should be Times New Roman (Times) and the font size should be 12.  The first line of all paragraphs should be indented by 0.25in, except for the first paragraph of each section, subsection, subsubsection etc. (the paragraph immediately after the header) where no indentation is needed.
 
-\subsection{Figures and Tables}
 In general, figures and tables should not appear before they are cited.  Place figure captions below the figures; place table titles above the tables.  If your figure has two parts, for example, include the labels ``(a)'' and ``(b)'' as part of the artwork.  Please verify that figures and tables you mention in the text actually exist.  make sure that all tables and figures are numbered as shown in Table \ref{units} and Figure 1.
 %sort out your own preferred means of inserting figures
 
@@ -68,11 +99,15 @@ Symbol & Quantity & Conversion from Gaussian \\ \hline
 \end{tabular}
 \end{table}
 
-\subsection{References}
-
 The list of cited references should appear at the end of the report, ordered alphabetically by the surnames of the first authors.  The default style for references cited in the main text is the  Harvard (author, date) format.  When citing a section in a book, please give the relevant page numbers, as in \cite[p293]{budgen}.  When citing, where there are either one or two authors, use the names, but if there are more than two, give the first one and use ``et al.'' as in  , except where this would be ambiguous, in which case use all author names.
 
 You need to give all authors' names in each reference.  Do not use ``et al.'' unless there are more than five authors.  Papers that have not been published should be cited as ``unpublished'' \cite{euther}.  Papers that have been submitted or accepted for publication should be cited as ``submitted for publication'' as in \cite{futher} .  You can also cite using just the year when the author's name appears in the text, as in ``but according to Futher \citeyear{futher}, we \dots''.  Where an authors has more than one publication in a year, add `a', `b' etc. after the year.
+
+\subsection{System Requirements}
+
+\subsection{Objectives}
+
+\subsection{References}
 
 
 
