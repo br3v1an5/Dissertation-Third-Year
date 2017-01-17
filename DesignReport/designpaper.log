@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  16 JAN 2017 10:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  17 JAN 2017 10:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -34,11 +34,7 @@ Package: harvard
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ))
-(./designpaper.aux
-
-LaTeX Warning: Label `units' multiply defined.
-
-)
+(./designpaper.aux)
 \openout1 = `designpaper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -54,7 +50,8 @@ LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 16.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
@@ -67,73 +64,109 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--24
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
+LaTeX Warning: Citation 'budgen' on page 1 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'euther' on page 1 undefined on input line 41.
+
+
+LaTeX Warning: Citation 'futher' on page 1 undefined on input line 41.
+
+
+LaTeX Warning: Citation 'futher' on page 1 undefined on input line 41.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
+
+ []
+
+[1
+
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 48--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--31
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--34
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 58.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 39.
-[1
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 58.
+[2] [3]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 125.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 125.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 125.
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 71.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 71.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 71.
-
-Overfull \hbox (38.17151pt too wide) in paragraph at lines 71--78
- [][] 
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]\OT1/ptm/m/n/12 Simulate the
  []
 
-[2]
 
-LaTeX Warning: Citation 'budgen' on page 3 undefined on input line 102.
-
-
-LaTeX Warning: Citation 'euther' on page 3 undefined on input line 104.
+Underfull \hbox (badness 10000) in paragraph at lines 128--128
+[]\OT1/ptm/m/n/12 Simulate the
+ []
 
 
-LaTeX Warning: Citation 'futher' on page 3 undefined on input line 104.
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+[]\OT1/ptm/m/n/12 Show the cor-
+ []
 
 
-LaTeX Warning: Citation 'futher' on page 3 undefined on input line 104.
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+\OT1/ptm/m/n/12 rect-ness of the
+ []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
+[]\OT1/ptm/m/n/12 Show the cor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
+\OT1/ptm/m/n/12 rect-ness of the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]\OT1/ptm/m/n/12 Parallelise The
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\OT1/ptm/m/n/12 BOMBE and
+ []
+
+
+Underfull \hbox (badness 3861) in paragraph at lines 132--132
+\OT1/ptm/m/n/12 eval-u-ate av-er-age
+ []
+
+[4]
 No file designpaper.bbl.
-[3] (./designpaper.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[5] (./designpaper.aux) ) 
 Here is how much of TeX's memory you used:
  467 strings out of 493014
  5619 string characters out of 6133351
- 59371 words of memory out of 5000000
+ 61371 words of memory out of 5000000
  4059 multiletter control sequences out of 15000+600000
  17641 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 22i,7n,22p,611b,202s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on designpaper.pdf (3 pages, 49973 bytes).
+ 22i,9n,22p,1123b,223s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/ba
+se/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on designpaper.pdf (5 pages, 54573 bytes).
 PDF statistics:
- 27 PDF objects out of 1000 (max. 8388607)
- 18 compressed objects within 1 object stream
+ 33 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
