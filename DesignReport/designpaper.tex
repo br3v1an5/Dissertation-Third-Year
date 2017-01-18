@@ -43,16 +43,12 @@ You need to give all authors' names in each reference.  Do not use ``et al.'' un
 \section{Abstract}
 
 {\bf Context/Background} - The world has changed significantly in the last fifty years. Ideas that were had before modern computing was fully realised need to be re-evaluated with a modern perspective. One such example is the Engima machine and it's counterpart, the BOMBE. What is the computational speed up from 1940 to now?\\
-talk about the background and why the project is being done.\\
 
 {\bf Aims} - The aim of this paper is to show the improvements of modern computing using the comparison of an antiquated design against several modern re-interpretations.\\
-what are the end goals?\\
 
 {\bf Method} - After both the engima and BOMBE are implemented they will then be improved on using modern techniques. Each will then be tested. The time taken for a standard engima machine to encrypt, the computerised version to encrypt and the parallelised version to encrypt will be compared to one another to give a good indication of the improvements over time.Another comparison will be made between the standard enigma, the computerised enigma and the parallelised enigma, this should re-enforce the indication of computer improvements\\
-how will we reach the end goals?\\
 
 {\bf Proposed Solution} - The enigma machine will be implemented through c++ code, this will form the baseline for a modern interpretation of the machine as it will not run anything in parallel. This code will then be parallelised using different modern techniques, these will then be used as the final comparison to show the significant increases in performance that any antiquated idea can expect.\\
-what is the system?
 \end{abstract}
 
 \begin{keywords}
@@ -80,6 +76,8 @@ The device has several settings that can be changed. Firstly the plugboard is re
 The BOMBE is the antithesis of the Engima machine, it was specifically designed by British cryptologists in 1939 to counter the enigma encoded messages that were used by the axis at the time. The BOMBE was designed to to discover the settings used by the enigma operators that were changed daily. 
 
 The BOMBE was an electro-mechanical device that replicated the action of several enigma machines wired together; the British BOMBE contained 36 enigma representations.
+
+A lot more to write...
 
 \subsection{What are the parallelisation techniques?}
 
@@ -109,11 +107,17 @@ They are...
 
 \subsection{Tools}
 
-What I need to make it work
+The only tools I will need are the Intel compiler, this will allow for the unimproved version of both the Enigma and BOMBE to be written in C++ meaning that it can be compiled by a standard C++ compiler. The Intel tools will allow for the parallelisation techniques to be used on the BOMBE simulation, at this point only the intel compiler will be able to compile the code to fully utilise the additions to the code that parallelization require. I have chosen C++ as my base language mainly because it has an expansive library of parlallel tools, this is the intel comiler, and it is also a language I am very familiar with, having used it extensively throughout my academic career.
+
+\subsection{Development and Maintenance}
+
+The project will be designed and produced in an agile manner, it will also incorporate a modular progression. Each system, enigma and BOMBE, will be produced independent of one another. This will allow verification of correctness to be acquired at several different stages throughout the implementation and not as a final progression. The Engima machine will be designed and implemented first, it will then be verified. Following that the standard BOMBE will be implemented and using the already verified engima as a means to show to correctness of the BOMBE, it will also be tested on known (ciphertext, plaintext) pairs as well. This will lead onto the final stage, the parallelisation and testing of the BOMBE, it will continuously be verified during this process to produce a fast and correct BOMBE implementation that will then be tested against it unparallelised counterpart, leading to a conclusion.
+
+The maintenance of this system will most likely not extend far past the deadline date, as by this point both systems will be fully working in the latest version of the intel compilers and will not be changed for any updated version of the compilers. The systems will work on any operating system that can install the latest version of the intel compilers at the time of the deadline.
 
 \subsection{System Architecture}
 
-How I will go about making the system
+The system will consist of two stand alone C++ programs, each will have an input file that will tune parameters and inputs. Each system will have a shell script that will verify the inputs, recompile on the current system, tune the parameters and then run the system with these settings. This will be the same for both the enigma and BOMBE. 
 
 \subsection{Functional Requirements}
 
@@ -135,11 +139,9 @@ DL6 & Parallelise The BOMBE and evaluate average computation time & This is a de
 
 \subsection{Evaluation}
 
-How I will go about evaluation
+Each system will be evaluated individually first then in conjunction to one another. To evaluate the enigma, it will be tested over known (plaintext,ciphertext) pairs to show output is valid. The BOMBE is tested over known and unknown ciphertext, the output of the known ciphertext will then be reencrypted using the settings that were used to decrypt it and they will be compared to show correctness. Once correctness has been established then decryption time will compared between the parallelised and standard BOMBE over the same ciphertext.
 
 \subsection{References}
-
-
 
 \bibliography{projectpaper}
 
