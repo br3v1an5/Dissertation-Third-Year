@@ -2,6 +2,7 @@
 \usepackage{times}
 \usepackage{durhampaper}
 \usepackage{harvard}
+\usepackage{graphicx}
 
 \citationmode{abbr}
 \bibliographystyle{agsm}
@@ -115,9 +116,11 @@ The project will be designed and produced in an agile manner, it will also incor
 
 The maintenance of this system will most likely not extend far past the deadline date, as by this point both systems will be fully working in the latest version of the intel compilers and will not be changed for any updated version of the compilers. The systems will work on any operating system that can install the latest version of the intel compilers at the time of the deadline.
 
-\subsection{System Architecture}
+\subsection{System Architecture and Design}
 
-The system will consist of two stand alone C++ programs, each will have an input file that will tune parameters and inputs. Each system will have a shell script that will verify the inputs, recompile on the current system, tune the parameters and then run the system with these settings. This will be the same for both the enigma and BOMBE. 
+The system will consist of two stand alone C++ programs, each will have an input file that will tune parameters and inputs. Each system will have a shell script that will verify the inputs, recompile on the current system, tune the parameters and then run the system with these settings. This will be the same for both the enigma and BOMBE. The settings file will be in the form of a basic .txt file, this will have a standard format. The settings file will contain; which rotors to use in which positions, what their offset is, the plugboard and reflector mappings, as well as the plaintext. 
+
+Neither the enigma or the BOMBE will allow for continuous input of characters as the plaintext or ciphertext respectively as this would be the dictate of the speed of the system, the characters cannot be input fast enough for there to be no machine idle time between two adjacent characters. Thus rendering a timed run completely dependant on how fast the user can type and not on the system itself.
 
 \subsection{Functional Requirements}
 
