@@ -8,7 +8,7 @@
 \bibliographystyle{agsm}
 
 \title{Enigma and BOMBE simulation}
-\author{David Budgen}
+\author{A.L. Gillies}
 \student{A.L. Gillies}
 \supervisor{M. Johnson}
 \degree{MEng Computer Science}
@@ -47,6 +47,11 @@ The Enigma machine was an early to mid 20th century cryptography device, it was 
 The device encrypts any given letter is the same way. Once a letter has been pressed on the keyboard a signal is passed through the plugboard this is a plug-based one to one mapping of all the letters on the keyboard to a unique letter of the alphabet. This output is then passed to the first of three rotors, a rotor is a set one to one mapping that will then step to the next letter once used. The order of either alphabet on the rotor cannot be changed but the mapping of the input letter to the output letter will change after each time it is used, this is called the stepping mechanism. The first rotor will step each time a letter is pressed and the second will only step if the first rotor has done a complete rotation, the third will only step if the second has done a complete rotation. The final component is the reflector this is similar to the plugboard that it is a one to one mapping but has the issue that it cannot map a letter to itself. After the reflector the signal is sent back through all three rotors and then through the plugboard to light up one of the letters on the lightboard. 
 
 The device has several settings that can be changed. Firstly the plugboard is reprogrammable, the plugboard is a one to one mapping between two alphabets. Secondly, the device typically has three rotors that can be used at any one time, there are eight rotors that can be put in any one of the three position, left, right and centre. Having chosen three of the rotors and their positions in the device, the initial rotation of each also has to be chosen. Finally, the reflector is also programmable, this is another one to one mapping between two alphabets.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{enigmaDiagram.png}
+\end{figure}
 
 \subsection{What is the BOMBE?}
 
