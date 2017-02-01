@@ -3,6 +3,7 @@
 \usepackage{durhampaper}
 \usepackage{harvard}
 \usepackage{graphicx}
+\usepackage{longtable}
 
 \citationmode{abbr}
 \bibliographystyle{agsm}
@@ -67,7 +68,7 @@ The crib is shown to correspond to the ciphertext through several steps. The fir
 
 \subsection{What are the parallelisation techniques?}
 
-They are...
+With the way the BOMBE works, over a set alphabet in a sequential nature, parallelisation would be a marked improvement as it would allow for a search over the set alphabet in a non-sequential way and thus improve speed. There are several techniques that could be employed to improve the speed of the search. Single Instruction Multiple Data is a idea that is rooted in doing the same instruction to multiple data sources, for example, if one wanted to add six to a lot of numbers, an unparallelised program would load the first number then add to it and send it back, a parallelised program would load as many of the numbers as it could, add six to all of them in one go then send them back. Multiple Instruction Multiple Data is another parallelisation technique that is much harder to implement but has the added benefit that different operations can be done to different datasets so two almost unconnected tasks can be done simultaneously. 
 
 \subsection{Deliverables}
 
@@ -114,15 +115,15 @@ Neither the Enigma or the BOMBE will allow for continuous input of characters as
 \caption{Functional Requirements}
 \vspace*{6pt}
 \label{units}
-\begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|p{3cm}| }\hline\hline
+\begin{longtable}{ |p{3cm}|p{3cm}|p{3cm}|p{3cm}| }\hline\hline
 Unique ID & Deliverable & Description & Priority \\ \hline
-DL1 & Simulate the Enigma Machine & This is a description of a thing & High \\ \hline
-DL2 & Simulate the Bombe & This is a description of a thing & High \\ \hline
-DL3 & Show the correctness of the Enigma Machine & This is a description of a thing & Medium \\ \hline
-DL4 & Show the correctness of the BOMBE & This is a description of a thing & Medium \\ \hline
-DL5 & Evaluate average computation time over set inputs for both Enigma and BOMBE & This is a description of a thing & High \\ \hline
-DL6 & Parallelise The BOMBE and evaluate average computation time & This is a description of a thing & High \\ \hline
-\end{tabular}
+DL1 & Simulate the Enigma Machine & Have a working Enigma machine that can take in settings and plaintext and return ciphertext. & High \\ \hline
+DL2 & Simulate the Bombe & A working BOMBE that takes in settings and ciphertext and returns decoded plaintext. & High \\ \hline
+DL3 & Show the correctness of the Enigma Machine & Show through a series of tests and validations that the plaintext fed to the Enigma Machine and the Ciphertext returned are paired through the settings of the enigma & Medium \\ \hline
+DL4 & Show the correctness of the BOMBE & Show that the known plaintext of the ciphertext input into the BOMBE is exactly the same as the plaintext that is returned by the BOMBE & Medium \\ \hline
+DL5 & Evaluate average computation time over set inputs for both Enigma and BOMBE & Using a wide range of known plaintext - ciphertext pairs find the average computation time, the time take on average to do a single encode or decode for both simulations & High \\ \hline
+DL6 & Parallelise The BOMBE and evaluate average computation time & Using known parallelisation techniques increase the speed at which the BOMBE will decode a given ciphertext & High \\ \hline
+\end{longtable}
 \end{table}
 
 \subsection{Evaluation}
@@ -132,7 +133,5 @@ Each system will be evaluated individually first then in conjunction to one anot
 \subsection{References}
 
 \bibliography{projectpaper}
-
-
 
 \end{document}

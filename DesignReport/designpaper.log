@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  25 JAN 2017 15:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  1 FEB 2017 12:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -66,39 +66,57 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip43
+\LTright=\skip44
+\LTpre=\skip45
+\LTpost=\skip46
+\LTchunksize=\count88
+\LTcapwidth=\dimen105
+\LT@head=\box26
+\LT@firsthead=\box27
+\LT@foot=\box28
+\LT@lastfoot=\box29
+\LT@cols=\count89
+\LT@rows=\count90
+\c@LT@tables=\count91
+\c@LT@chunks=\count92
+\LT@p@ftn=\toks15
+)
 (./designpaper.aux)
 \openout1 = `designpaper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 18.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count88
-\scratchdimen=\dimen105
-\scratchbox=\box26
-\nofMPsegments=\count89
-\nofMParguments=\count90
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count91
-\MPscratchDim=\dimen106
-\MPnumerator=\count92
-\makeMPintoPDFobject=\count93
-\everyMPtoPDFconversion=\toks16
+\scratchcounter=\count93
+\scratchdimen=\dimen106
+\scratchbox=\box30
+\nofMPsegments=\count94
+\nofMParguments=\count95
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count96
+\MPscratchDim=\dimen107
+\MPnumerator=\count97
+\makeMPintoPDFobject=\count98
+\everyMPtoPDFconversion=\toks17
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -147,71 +165,104 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 20.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 21.
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 31.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 32.
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 <enigmaDiagram.png, id=9, 963.6pt x 542.025pt>
 File: enigmaDiagram.png Graphic file (type png)
  <use enigmaDiagram.png>
-Package pdftex.def Info: enigmaDiagram.png used on input line 53.
+Package pdftex.def Info: enigmaDiagram.png used on input line 54.
 (pdftex.def)             Requested size: 461.13188pt x 259.38333pt.
  [2 <./enigmaDiagram.png>] [3] [4]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 117.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 117.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 117.
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
+[]|\OT1/ptm/m/n/12 Simulate the
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--119
-[]\OT1/ptm/m/n/12 Simulate the
+
+Underfull \hbox (badness 1694) in paragraph at lines 120--120
+[]|\OT1/ptm/m/n/12 Have a work-ing
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 120--120
+\OT1/ptm/m/n/12 Enigma ma-chine
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 120--120
-[]\OT1/ptm/m/n/12 Simulate the
+\OT1/ptm/m/n/12 that can take
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
+\OT1/ptm/m/n/12 in set-tings and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
+\OT1/ptm/m/n/12 plain-text and
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 121--121
-[]\OT1/ptm/m/n/12 Show the cor-
+[]|\OT1/ptm/m/n/12 Simulate the
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 121--121
-\OT1/ptm/m/n/12 rect-ness of the
+[]|\OT1/ptm/m/n/12 A work-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+\OT1/ptm/m/n/12 BOMBE that
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 121--121
+\OT1/ptm/m/n/12 takes in set-tings
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+\OT1/ptm/m/n/12 and ci-pher-text
+ []
+
+
+Underfull \hbox (badness 5133) in paragraph at lines 121--121
+\OT1/ptm/m/n/12 and re-turns de-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 122--122
-[]\OT1/ptm/m/n/12 Show the cor-
+[]|\OT1/ptm/m/n/12 Show the cor-
  []
 
 
@@ -220,38 +271,170 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--122
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-[]\OT1/ptm/m/n/12 Parallelise The
+Underfull \hbox (badness 1931) in paragraph at lines 122--122
+[]|\OT1/ptm/m/n/12 Show through a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\OT1/ptm/m/n/12 val-i-da-tions that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\OT1/ptm/m/n/12 to the Enigma
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\OT1/ptm/m/n/12 Ma-chine and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\OT1/ptm/m/n/12 the Ci-pher-text
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\OT1/ptm/m/n/12 re-turned are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\OT1/ptm/m/n/12 paired through
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\OT1/ptm/m/n/12 Show the cor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\OT1/ptm/m/n/12 rect-ness of the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\OT1/ptm/m/n/12 Show that the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\OT1/ptm/m/n/12 known plain-text
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\OT1/ptm/m/n/12 in-put into the
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 123--123
+\OT1/ptm/m/n/12 BOMBE is ex-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 124--124
+[]|\OT1/ptm/m/n/12 Using a wide
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 124--124
+\OT1/ptm/m/n/12 range of known
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+\OT1/ptm/m/n/12 text pairs find
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+\OT1/ptm/m/n/12 pu-ta-tion time,
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 124--124
+\OT1/ptm/m/n/12 av-er-age to do a
+ []
+
+
+Underfull \hbox (badness 2165) in paragraph at lines 124--124
+\OT1/ptm/m/n/12 de-code for both
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\OT1/ptm/m/n/12 Parallelise The
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
 \OT1/ptm/m/n/12 BOMBE and
  []
 
 
-Underfull \hbox (badness 3861) in paragraph at lines 124--124
+Underfull \hbox (badness 3861) in paragraph at lines 125--125
 \OT1/ptm/m/n/12 eval-u-ate av-er-age
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\OT1/ptm/m/n/12 Using known
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\OT1/ptm/m/n/12 par-al-leli-sa-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\OT1/ptm/m/n/12 tech-niques in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\OT1/ptm/m/n/12 at which the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\OT1/ptm/m/n/12 BOMBE will
+ []
+
+
+Underfull \hbox (badness 5696) in paragraph at lines 125--125
+\OT1/ptm/m/n/12 de-code a given
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 126
+ []
+
+
+LaTeX Warning: Float too large for page by 147.24971pt on input line 127.
+
 No file designpaper.bbl.
-[5] (./designpaper.aux) ) 
+[5] [6] (./designpaper.aux) ) 
 Here is how much of TeX's memory you used:
- 1719 strings out of 493014
- 24587 string characters out of 6133351
- 86512 words of memory out of 5000000
- 5245 multiletter control sequences out of 15000+600000
- 17641 words of font info for 37 fonts, out of 8000000 for 9000
+ 1792 strings out of 493014
+ 25478 string characters out of 6133351
+ 98264 words of memory out of 5000000
+ 5321 multiletter control sequences out of 15000+600000
+ 15203 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,9n,23p,1123b,223s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/ba
-se/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on designpaper.pdf (5 pages, 95934 bytes).
+ 38i,6n,23p,1123b,238s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvip
+s/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on designpaper.pdf (6 pages, 97588 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
- 23 compressed objects within 1 object stream
+ 39 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
