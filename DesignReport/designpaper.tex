@@ -60,15 +60,37 @@ The BOMBE is the antithesis of the Engima machine, it was specifically designed 
 
 The BOMBE was an electro-mechanical device that replicated the action of several Enigma machines wired together; the British BOMBE contained 36 Enigma representations.
 
-The BOMBE was based on the probably-phrase attack; it is possible to exploit the relationship between a section of plaintext that was either guessed or already known, and the ciphertext to which it might correspond. The idea of the BOMBE was to remove any superfluous Enigma set-ups using the fact that the Enigma could not encode a letter as itself. Once the 'crib' or the guessed plaintext had been shown to be the test ciphertext then the settings of the Enigma would be known and any other messages sent by that Enigma machine would be known for the rest of the day as the British cryptologists knew the settings used for the current messages and it was just a case of feeding the ciphertext into their own Enigma machine with the current settings and reading the output.
+The BOMBE was based on the probably-phrase attack; it is possible to exploit the relationship between a section of plaintext that was either guessed or already known, and the ciphertext to which it might correspond. The idea of the BOMBE was to remove any superfluous Enigma set-ups using the fact that the Enigma could not encode a letter as itself. Once the 'crib' or the guessed plaintext had been shown to be the test ciphertext then the settings of the Enigma would be known and any other messages sent by the Enigma machines would be known for the rest of the day as the British cryptologists knew the settings used for the current messages and it was just a case of feeding the ciphertext into their own Enigma machine with the current settings and reading the output.
 
-The crib is shown to correspond to the ciphertext through several steps. The first is to use the fact that the Enigma had a flaw in the encryption process to full effect, if at any point the same letter is in the same position in the ciphertext and crib then this encryption is invalid thus the crib will be moved one letter over and retested, this removed a lot of unnecessary testing in the later stages. The second stage is to create a connection network for each step, this is done by pairing and numbering a possible ciphertext-plaintext pair and creating a network where any pairing is a transition pair in the ciphertext-plaintext pair.
+The crib is shown to correspond to the ciphertext through several steps. The first is to use the fact that the Enigma had a flaw in the encryption process to full effect, if at any point the same letter is in the same position in the ciphertext and crib then this encryption is invalid thus the crib will be moved one letter over and retested, this removed a lot of unnecessary testing in the later stages. 
 
+To give a visual representation of the first stage.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{StageOneBOMBE.png}
+\end{figure}
+
+The second stage is to create a connection network for each step, this is done by pairing and numbering a possible ciphertext-plaintext pair and creating a network where any pairing is a transition pair in the ciphertext-plaintext pair.
+
+An example of what the connection network could look like is shown bellow.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{StageTwoBOMBE.png}
+\end{figure}
+
+...
+talk about the other stages of the BOMBE and detail this one
 ...
 
 \subsection{What are the parallelisation techniques?}
 
 With the way the BOMBE works, over a set alphabet in a sequential nature, parallelisation would be a marked improvement as it would allow for a search over the set alphabet in a non-sequential way and thus improve speed. There are several techniques that could be employed to improve the speed of the search. Single Instruction Multiple Data is a idea that is rooted in doing the same instruction to multiple data sources, for example, if one wanted to add six to a lot of numbers, an unparallelised program would load the first number then add to it and send it back, a parallelised program would load as many of the numbers as it could, add six to all of them in one go then send them back. Multiple Instruction Multiple Data is another parallelisation technique that is much harder to implement but has the added benefit that different operations can be done to different datasets so two almost unconnected tasks can be done simultaneously. 
+
+...
+keep writing
+...
 
 \subsection{Deliverables}
 
@@ -94,7 +116,7 @@ With the way the BOMBE works, over a set alphabet in a sequential nature, parall
 
 \subsection{Tools}
 
-The only tools I will need are the Intel compiler, this will allow for the unimproved version of both the Enigma and BOMBE to be written in C++ meaning that it can be compiled by a standard C++ compiler. The Intel tools will allow for the parallelisation techniques to be used on the BOMBE simulation, at this point only the intel compiler will be able to compile the code to fully utilise the additions to the code that parallelization require. I have chosen C++ as my base language mainly because it has an expansive library of parlallel tools, this is the intel comiler, and it is also a language I am very familiar with, having used it extensively throughout my academic career.
+The only tools I will need are the Intel compiler, this will allow for the unimproved version of both the Enigma and BOMBE to be written in C++ meaning that it can be compiled by a standard C++ compiler. The Intel tools will allow for parallelisation techniques to be applied to the BOMBE simulation, at this point only the intel compiler will be able to compile the code to fully utilise the additions to the code that parallelization require. I have chosen C++ as my base language mainly because it has an expansive library of parlallel tools, this is the intel comiler, and it is also a language I am very familiar with, having used it extensively throughout my academic career.
 
 \subsection{Development and Maintenance}
 
@@ -107,6 +129,8 @@ The maintenance of this system will most likely not extend far past the deadline
 The system will consist of two stand alone C++ programs, each will have an input file that will tune parameters and inputs. Each system will have a shell script that will verify the inputs, recompile on the current system, tune the parameters and then run the system with these settings. This will be the same for both the Enigma and BOMBE. The settings file will be in the form of a basic .txt file, this will have a standard format. The settings file will contain; which rotors to use in which positions, what their offset is, the plugboard and reflector mappings, as well as the plaintext. 
 
 Neither the Enigma or the BOMBE will allow for continuous input of characters as the plaintext or ciphertext respectively as this would be the dictate of the speed of the system, the characters cannot be input fast enough for there to be no machine idle time between two adjacent characters. Thus rendering a timed run completely dependant on how fast the user can type and not on the system itself.
+
+The Enigma simulation will output its results to a text file as this will be useful for comparison as well as using the output of the Enigma simulation as the input for the BOMBE simulation as well as having files for both the cipher-text and plain-text that will form the basis of the testing of both simulations. The BOMBE will also output a text file as a result as, again, this will be useful for testing at a later date. 
 
 \subsection{Functional Requirements}
 
@@ -133,5 +157,9 @@ Each system will be evaluated individually first then in conjunction to one anot
 \subsection{References}
 
 \bibliography{projectpaper}
+
+...
+format document
+...
 
 \end{document}
