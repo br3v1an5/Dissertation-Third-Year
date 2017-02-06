@@ -49,6 +49,8 @@ The device encrypts any given letter is the same way. Once a letter has been pre
 
 The device has several settings that can be changed. Firstly the plugboard is reprogrammable, the plugboard is a one to one mapping between two alphabets. Secondly, the device typically has three rotors that can be used at any one time, there are eight rotors that can be put in any one of the three position, left, right and centre. Having chosen three of the rotors and their positions in the device, the initial rotation of each also has to be chosen. Finally, the reflector is also programmable, this is another one to one mapping between two alphabets.
 
+Shown below is a diagrammatic representation of the Engima Machine.
+
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{enigmaDiagram.png}
@@ -71,7 +73,7 @@ To give a visual representation of the first stage.
 \includegraphics[width=\textwidth]{StageOneBOMBE.png}
 \end{figure}
 
-The second stage is to create a connection network for each step, this is done by pairing and numbering a possible ciphertext-plaintext pair and creating a network where any pairing is a transition pair in the ciphertext-plaintext pair.
+The second stage is to create a connection network for each step, this is done by pairing and numbering a possible ciphertext-plaintext pair as shown in !!!figure X!!!!. After we have these pairings, we will create the network where at any step, indicated by the pair number, there is a map from the corresponding plain-text character and cipher-text character. This is then done for every character pairing in the plain-text, cipher-text pairing.
 
 An example of what the connection network could look like is shown bellow.
 
@@ -81,7 +83,8 @@ An example of what the connection network could look like is shown bellow.
 \end{figure}
 
 ...
-talk about the other stages of the BOMBE and detail this one
+talk about the other stages of the BOMBE
+take as much as possible from the website
 ...
 
 \subsection{What are the parallelisation techniques?}
@@ -89,7 +92,7 @@ talk about the other stages of the BOMBE and detail this one
 With the way the BOMBE works, over a set alphabet in a sequential nature, parallelisation would be a marked improvement as it would allow for a search over the set alphabet in a non-sequential way and thus improve speed. There are several techniques that could be employed to improve the speed of the search. Single Instruction Multiple Data is a idea that is rooted in doing the same instruction to multiple data sources, for example, if one wanted to add six to a lot of numbers, an unparallelised program would load the first number then add to it and send it back, a parallelised program would load as many of the numbers as it could, add six to all of them in one go then send them back. Multiple Instruction Multiple Data is another parallelisation technique that is much harder to implement but has the added benefit that different operations can be done to different datasets so two almost unconnected tasks can be done simultaneously. 
 
 ...
-keep writing
+not sure what else to add here, will ask matthew johnson
 ...
 
 \subsection{Deliverables}
@@ -139,7 +142,7 @@ The Enigma simulation will output its results to a text file as this will be use
 \caption{Functional Requirements}
 \vspace*{6pt}
 \label{units}
-\begin{longtable}{ |p{3cm}|p{3cm}|p{3cm}|p{3cm}| }\hline\hline
+\begin{longtable}{ |p{1cm}|p{4cm}|p{5cm}|p{2cm}| }\hline\hline
 Unique ID & Deliverable & Description & Priority \\ \hline
 DL1 & Simulate the Enigma Machine & Have a working Enigma machine that can take in settings and plaintext and return ciphertext. & High \\ \hline
 DL2 & Simulate the Bombe & A working BOMBE that takes in settings and ciphertext and returns decoded plaintext. & High \\ \hline
