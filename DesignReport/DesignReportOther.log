@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  6 FEB 2017 14:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  7 FEB 2017 14:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**designpaper.tex
-(./designpaper.tex
+**DesignReportOther.tex
+(./DesignReportOther.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
@@ -84,8 +84,8 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count92
 \LT@p@ftn=\toks15
 )
-(./designpaper.aux)
-\openout1 = `designpaper.aux'.
+(./DesignReportOther.aux)
+\openout1 = `DesignReportOther.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
@@ -217,68 +217,76 @@ Package pdftex.def Info: StageTwoBOMBE.png used on input line 82.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3 <./StageOneBOMBE.png>] [4 <./StageTwoBOMBE.png>] [5]
-Overfull \hbox (6.87502pt too wide) in paragraph at lines 146--146
+[3 <./StageOneBOMBE.png>] [4 <./StageTwoBOMBE.png>]
+<StageThreeBOMBE.png, id=25, 673.51625pt x 428.60126pt>
+File: StageThreeBOMBE.png Graphic file (type png)
+
+<use StageThreeBOMBE.png>
+Package pdftex.def Info: StageThreeBOMBE.png used on input line 107.
+(pdftex.def)             Requested size: 461.13188pt x 293.45274pt.
+ [5 <./StageThreeBOMBE.png>] [6]
+Overfull \hbox (6.87502pt too wide) in paragraph at lines 168--168
 []|\OT1/ptm/m/n/12 Unique
  []
 
 
-Underfull \hbox (badness 4859) in paragraph at lines 147--147
+Underfull \hbox (badness 4859) in paragraph at lines 169--169
 []|\OT1/ptm/m/n/12 Simulate the Enigma
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
 []|\OT1/ptm/m/n/12 A work-ing BOMBE that
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
 \OT1/ptm/m/n/12 text and re-turns de-coded
  []
 
 
-Underfull \hbox (badness 2753) in paragraph at lines 151--151
+Underfull \hbox (badness 2753) in paragraph at lines 173--173
 \OT1/ptm/m/n/12 plain-text - ci-pher-text pairs
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
 []|\OT1/ptm/m/n/12 Parallelise The
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 152--152
+Underfull \hbox (badness 1281) in paragraph at lines 174--174
 \OT1/ptm/m/n/12 BOMBE and eval-u-ate
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
 \OT1/ptm/m/n/12 av-er-age com-pu-ta-tion
  []
 
 
-Underfull \vbox (badness 10000) detected at line 153
+Underfull \vbox (badness 10000) detected at line 175
  []
 
-No file designpaper.bbl.
-[6] [7] (./designpaper.aux) ) 
+[7] (./DesignReportOther.bbl) [8] (./DesignReportOther.aux) ) 
 Here is how much of TeX's memory you used:
- 1802 strings out of 493014
- 25686 string characters out of 6133351
- 97265 words of memory out of 5000000
- 5329 multiletter control sequences out of 15000+600000
- 15203 words of font info for 29 fonts, out of 8000000 for 9000
+ 1819 strings out of 493014
+ 26017 string characters out of 6133351
+ 97397 words of memory out of 5000000
+ 5341 multiletter control sequences out of 15000+600000
+ 16887 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,23p,1123b,238s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvip
-s/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.
-pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr
-/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on designpaper.pdf (7 pages, 246403 bytes).
+ 38i,5n,23p,1129b,220s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texliv
+e/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-di
+st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
+times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr
+i8a.pfb>
+Output written on DesignReportOther.pdf (8 pages, 417369 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 57 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

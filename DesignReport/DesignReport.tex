@@ -82,9 +82,33 @@ An example of what the connection network could look like is shown bellow.
 \includegraphics[width=\textwidth]{StageTwoBOMBE.png}
 \end{figure}
 
+Using the connection network the search space can be reduced by using the implications of some transformations on others. We first must recall that each transformation consists of two 'stecker swappings' and a 'scrambler encryption' these are the rotor transformation and reflector respectively. Using the connection network above, here is an example of the search space reduction.\\
+
+For example, let us test the hypothesis that E is mapped to K through the first three rotors, also known as E is "steckered" to K. Now consider how E is transformed into A at relative position 23, this is shown on the connection network above.
+
+If E is "steckered" to K, K will be input to the reflector or "scrambler" at relative position 23 which will output some other letter L1. Since we know that E transforms into A at relative position 23, we know that A must be "steckered" to L1.
+
+But if A is "steckered" to L1, L1 will be input to the "scrambler" at relative position 21 which will output some other letter L2. Since we know that A transforms into I at relative position 21, we know that I must be "steckered" to L2.
+
+But if I is "steckered" to L2, L2 will be input to the "scrambler" at relative position 3 which will output some other letter L3. Since we know that I transforms into T at relative position 3, we know that T must be "steckered" to L3.
+
+But if T is "steckered" to L3, L3 will be input to the "scrambler" at relative position 5.
+
+Now consider the output of the "scrambler" at relative position 5 when it receives L3 as its input. Since we know that T transforms into E at relative position 5, we know that the output letter of the "scrambler" at relative position 5 must be "steckered" to E.
+
+Suppose, when given L3 as its input, the "scrambler" at relative position 5 outputs J. By our original hypothesis E is "steckered" to K, but by our chain of implications E is "steckered" to J, so in this case E is "steckered" to both K and J. But the construction of the Enigma does not permit one letter to be "steckered" to two letters, so E cannot be "steckered" to both K and J, so our original hypothesis has resulted in an impossible consequence and so must be false.
+
+But now suppose, when given L3 as its input, the "scrambler" at relative position 5 outputs K. Then by our original hypothesis E is "steckered" to K, and by our chain of implications E is "steckered" to K, so in this case E is "steckered" only to K, thus our original hypothesis has resulted in a consistent consequence and so may be true.
+
+The altered connection network bellow shows the hypothesis that E is "steckered" to K via the the steps of implication that we have been through.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{StageThreeBOMBE.png}
+\end{figure}
+
 ...
 talk about the other stages of the BOMBE
-take as much as possible from the website
 ...
 
 \subsection{What are the parallelisation techniques?}
@@ -137,9 +161,6 @@ The Enigma simulation will output its results to a text file as this will be use
 
 \subsection{Functional Requirements}
 
-\begin{table}[htb]
-\centering
-\caption{Functional Requirements}
 \vspace*{6pt}
 \label{units}
 \begin{longtable}{ |p{1cm}|p{4cm}|p{5cm}|p{2cm}| }\hline\hline
@@ -151,7 +172,6 @@ DL4 & Show the correctness of the BOMBE & Show that the known plaintext of the c
 DL5 & Evaluate average computation time over set inputs for both Enigma and BOMBE & Using a wide range of known plaintext - ciphertext pairs find the average computation time, the time take on average to do a single encode or decode for both simulations & High \\ \hline
 DL6 & Parallelise The BOMBE and evaluate average computation time & Using known parallelisation techniques increase the speed at which the BOMBE will decode a given ciphertext & High \\ \hline
 \end{longtable}
-\end{table}
 
 \subsection{Evaluation}
 
@@ -159,11 +179,10 @@ Each system will be evaluated individually first then in conjunction to one anot
 
 \subsection{References} 
 
- 
-\bibliography{projectpaper} 
+\bibliography{REF}
 
 ...
-format document
+Make the references work
 ...
 
 \end{document}
