@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  7 FEB 2017 14:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  8 FEB 2017 10:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -207,22 +207,18 @@ File: StageOneBOMBE.png Graphic file (type png)
 <use StageOneBOMBE.png>
 Package pdftex.def Info: StageOneBOMBE.png used on input line 73.
 (pdftex.def)             Requested size: 461.13188pt x 149.38483pt.
- <StageTwoBOMBE.png, id=16, 692.5875pt x 433.62pt>
+ [3 <./StageOneBOMBE.png>]
+<StageTwoBOMBE.png, id=20, 692.5875pt x 433.62pt>
 File: StageTwoBOMBE.png Graphic file (type png)
-
-<use StageTwoBOMBE.png>
+ <use StageTwoBOMBE.png>
 Package pdftex.def Info: StageTwoBOMBE.png used on input line 82.
 (pdftex.def)             Requested size: 461.13188pt x 288.71759pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
-[3 <./StageOneBOMBE.png>] [4 <./StageTwoBOMBE.png>]
+[4 <./StageTwoBOMBE.png>]
 <StageThreeBOMBE.png, id=25, 673.51625pt x 428.60126pt>
 File: StageThreeBOMBE.png Graphic file (type png)
 
@@ -275,22 +271,22 @@ Underfull \vbox (badness 10000) detected at line 174
 
 [7] (./DesignReport.bbl) [8] (./DesignReport.aux) ) 
 Here is how much of TeX's memory you used:
- 1812 strings out of 493014
- 25905 string characters out of 6133351
- 97308 words of memory out of 5000000
- 5336 multiletter control sequences out of 15000+600000
- 15203 words of font info for 29 fonts, out of 8000000 for 9000
+ 1823 strings out of 493014
+ 26082 string characters out of 6133351
+ 98519 words of memory out of 5000000
+ 5345 multiletter control sequences out of 15000+600000
+ 16887 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,5n,23p,1124b,220s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/tex
 mf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/t
 imes/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr
-8a.pfb>
-Output written on DesignReport.pdf (8 pages, 405726 bytes).
+8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on DesignReport.pdf (8 pages, 419901 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 57 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

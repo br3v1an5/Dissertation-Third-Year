@@ -22,9 +22,9 @@
 
 {\bf Context/Background} - Can antiquated ideas and designs be brought to the modern day? The aim of this paper is to show the plausibility of this using the Enigma and the BOMBE, two cryptographic devices from the second world war, these will be modernised and tested to prove this hypothesis.\\
 
-{\bf Aims} - Using the known execution speed of the antique Engima and BOMBE, the aim of this paper is to show, through implementation and testing of a modern interpretation of the Enigma and BOMBE, the speed up that has occurred since the inception of both.\\
+{\bf Aims} - Using the known execution speed of the antique Enigma and BOMBE, the aim of this paper is to show, through implementation and testing of a modern interpretation of the Enigma and BOMBE, the speed up that has occurred since the inception of both.\\
 
-{\bf Method} - After both the Engima and BOMBE are implemented the BOMBE will then be improved on using parallelisation techniques. Each will then be tested. The time taken for a standard engima machine to encrypt, the computerised version to encrypt and the parallelised version to encrypt will be compared to one another to give a good indication of the improvements over time. Another comparison will be made between the standard Enigma, the computerised Enigma and the parallelised Enigma, this should re-enforce the indication of computer improvements.\\
+{\bf Method} - After both the Enigma and BOMBE are implemented the BOMBE will then be improved on using parallelisation techniques. Each will then be tested. The time taken for a standard Enigma machine to encrypt, the computerised version to encrypt and the parallelised version to encrypt will be compared to one another to give a good indication of the improvements over time. Another comparison will be made between the standard Enigma, the computerised Enigma and the parallelised Enigma, this should re-enforce the indication of computer improvements.\\
 
 {\bf Proposed Solution} - The Enigma machine will be implemented through C++ code, this will form the baseline for a modern interpretation of the machine as it will not run anything in parallel. This code will then be parallelised using different standardised techniques, these will then be used as the final comparison to show the significant increases in performance that this seemingly antiquated idea can expect across different inputs.\\
 \end{abstract}
@@ -49,7 +49,7 @@ The device encrypts any given letter is the same way. Once a letter has been pre
 
 The device has several settings that can be changed. Firstly the plugboard is reprogrammable, the plugboard is a one to one mapping between two alphabets. Secondly, the device typically has three rotors that can be used at any one time, there are eight rotors that can be put in any one of the three position, left, right and centre. Having chosen three of the rotors and their positions in the device, the initial rotation of each also has to be chosen. Finally, the reflector is also programmable, this is another one to one mapping between two alphabets.
 
-Shown below is a diagrammatic representation of the Engima Machine.
+Shown below is a diagrammatic representation of the Enigma Machine.
 
 \begin{figure}[h]
 \centering
@@ -58,9 +58,9 @@ Shown below is a diagrammatic representation of the Engima Machine.
 
 \subsection{What is the BOMBE?}
 
-The BOMBE is the antithesis of the Engima machine, it was specifically designed by British cryptologists in 1939 to counter the Enigma encoded messages that were used by the Axis at the time. The BOMBE was designed to to discover the settings used by the Enigma operators that were changed daily. 
+The BOMBE is the antithesis of the Enigma machine, it was specifically designed by British cryptologists in 1939 to counter the Enigma encoded messages that were used by the Axis at the time. The BOMBE was designed to to discover the settings used by the Enigma operators that were changed daily. 
 
-The BOMBE was an electro-mechanical device that replicated the action of several Enigma machines wired together; the British BOMBE contained 36 Enigma representations.
+The BOMBE was an electro-mechanical device that replicated the action of several Enigma machines wired together; the British BOMBE contained 36 Enigma representations. These representations were not exact clones, they were made up of seven parts , namely six rotors and a reflector substitute. the first three rotors behaved exactly as they do in the enigma, and input entering the first rotor, being remapped, then the result is fed into the second and remapped and so on until the reflector substitute is reached, this would have the same mapping as its Enigma counterpart but does not feed it's result back into rotor three, it instead feeds the result into rotor 4 which is a refection of rotor three, this has the same effect to the mapping but allowed for the BOMBE to be easier to design and manufacture. Once rotor four had remapped the input, the output would go on to rotor five which is a reflection of rotor two, and so forth.
 
 The BOMBE was based on the probably-phrase attack; it is possible to exploit the relationship between a section of plaintext that was either guessed or already known, and the ciphertext to which it might correspond. The idea of the BOMBE was to remove any superfluous Enigma set-ups using the fact that the Enigma could not encode a letter as itself. Once the 'crib' or the guessed plaintext had been shown to be the test ciphertext then the settings of the Enigma would be known and any other messages sent by the Enigma machines would be known for the rest of the day as the British cryptologists knew the settings used for the current messages and it was just a case of feeding the ciphertext into their own Enigma machine with the current settings and reading the output.
 
@@ -135,7 +135,7 @@ not sure what else to add here, will ask matthew johnson
 
 \subsubsection{Advanced Objectives}
 
-- Increase the scope of the BOMBE simuation by running the simulation in parallel. This means that different parts of the ciphertext could be run in parallel or the whole cipher text being run with each parallel part testing different configurations of the Engima machine.
+- Increase the scope of the BOMBE simuation by running the simulation in parallel. This means that different parts of the ciphertext could be run in parallel or the whole cipher text being run with each parallel part testing different configurations of the Enigma machine.
 
 
 
@@ -147,7 +147,7 @@ The only tools I will need are the Intel compiler, this will allow for the unimp
 
 \subsection{Development and Maintenance}
 
-The project will be designed and produced in an agile manner, it will also incorporate a modular progression. Each system, Enigma and BOMBE, will be produced independent of one another. This will allow verification of correctness to be acquired at several different stages throughout the implementation and not as a final progression. The Engima machine will be designed and implemented first, it will then be verified. Following that the standard BOMBE will be implemented and using the already verified engima as a means to show to correctness of the BOMBE, it will also be tested on known (ciphertext, plaintext) pairs as well. This will lead onto the final stage, the parallelisation and testing of the BOMBE, it will continuously be verified during this process to produce a fast and correct BOMBE implementation that will then be tested against it unparallelised counterpart, leading to a conclusion.
+The project will be designed and produced in an agile manner, it will also incorporate a modular progression. Each system, Enigma and BOMBE, will be produced independent of one another. This will allow verification of correctness to be acquired at several different stages throughout the implementation and not as a final progression. The Enigma machine will be designed and implemented first, it will then be verified. Following that the standard BOMBE will be implemented and using the already verified Enigma as a means to show to correctness of the BOMBE, it will also be tested on known (ciphertext, plaintext) pairs as well. This will lead onto the final stage, the parallelisation and testing of the BOMBE, it will continuously be verified during this process to produce a fast and correct BOMBE implementation that will then be tested against it unparallelised counterpart, leading to a conclusion.
 
 The maintenance of this system will most likely not extend far past the deadline date, as by this point both systems will be fully working in the latest version of the intel compilers and will not be changed for any updated version of the compilers. The systems will work on any operating system that can install the latest version of the intel compilers at the time of the deadline.
 
@@ -181,10 +181,6 @@ Each system will be evaluated individually first then in conjunction to one anot
 
 \bibliography{REF}
 
-\cite{Stoler2007}
-
-...
-Make the references work
-...
+\nocite{*}
 
 \end{document}
