@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  8 FEB 2017 14:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  8 FEB 2017 10:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -225,55 +225,55 @@ File: StageThreeBOMBE.png Graphic file (type png)
 <use StageThreeBOMBE.png>
 Package pdftex.def Info: StageThreeBOMBE.png used on input line 107.
 (pdftex.def)             Requested size: 461.13188pt x 293.45274pt.
- [5 <./StageThreeBOMBE.png>] [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+ [5 <./StageThreeBOMBE.png>] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 167--167
 []|\OT1/ptm/m/n/12 Unique
  []
 
 
-Underfull \hbox (badness 4859) in paragraph at lines 175--175
+Underfull \hbox (badness 4859) in paragraph at lines 168--168
 []|\OT1/ptm/m/n/12 Simulate the Enigma
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--176
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
 []|\OT1/ptm/m/n/12 A work-ing BOMBE that
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--176
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
 \OT1/ptm/m/n/12 text and re-turns de-coded
  []
 
 
-Underfull \hbox (badness 2753) in paragraph at lines 179--179
+Underfull \hbox (badness 2753) in paragraph at lines 172--172
 \OT1/ptm/m/n/12 plain-text - ci-pher-text pairs
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
 []|\OT1/ptm/m/n/12 Parallelise The
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 180--180
+Underfull \hbox (badness 1281) in paragraph at lines 173--173
 \OT1/ptm/m/n/12 BOMBE and eval-u-ate
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
 \OT1/ptm/m/n/12 av-er-age com-pu-ta-tion
  []
 
 
-Underfull \vbox (badness 10000) detected at line 181
+Underfull \vbox (badness 10000) detected at line 174
  []
 
-[8] (./DesignReport.bbl) [9] (./DesignReport.aux) ) 
+[7] (./DesignReport.bbl) [8] (./DesignReport.aux) ) 
 Here is how much of TeX's memory you used:
  1823 strings out of 493014
  26082 string characters out of 6133351
- 95519 words of memory out of 5000000
+ 98519 words of memory out of 5000000
  5345 multiletter control sequences out of 15000+600000
  16887 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -283,10 +283,10 @@ mf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/t
 imes/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr
 8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on DesignReport.pdf (9 pages, 421628 bytes).
+Output written on DesignReport.pdf (8 pages, 419901 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 57 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
