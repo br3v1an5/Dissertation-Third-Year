@@ -114,17 +114,10 @@ The effect of the diagonal board, when attached to the BOMBE, was to to increase
 At this point the search space is sufficiently reduced to allow for the BOMBE to be used and have a result within a reasonable time. The top rotor was set to rotate at 120rpm with the second rotor 1/26th of the speed and the third 1/26th of that. At the set speed the BOMBE will exhaustively search the problem space and will either reach the end of the search space or reach a 'stop'. A 'stop' was known as a setting where the transformations determined by the rotor order, rotor position, and some stecker swapping are consistent with the transformations that yielded the ciphertext from the crib. 
 
 The BOMBE would 'know' that it had reached a stop when all output wires through the test registry were 'live'. This test registry was present on the diagonal board. At this point all the rotor positions were known.
-...
-ADD A BIT MORE
-...
 
 \subsection{What are the parallelisation techniques?}
 
 With the way the BOMBE works, over a set alphabet in a sequential nature, parallelisation would be a marked improvement as it would allow for a search over the set alphabet in a non-sequential way and thus improve speed. There are several techniques that could be employed to improve the speed of the search. Single Instruction Multiple Data is a idea that is rooted in doing the same instruction to multiple data sources, for example, if one wanted to add six to a lot of numbers, an unparallelised program would load the first number then add to it and send it back, a parallelised program would load as many of the numbers as it could, add six to all of them in one go then send them back. Multiple Instruction Multiple Data is another parallelisation technique that is much harder to implement but has the added benefit that different operations can be done to different datasets so two almost unconnected tasks can be done simultaneously. 
-
-...
-not sure what else to add here, will ask matthew johnson
-...
 
 \subsection{Deliverables}
 
