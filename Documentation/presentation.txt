@@ -3,24 +3,40 @@ Notes for the presentation
 Introduction
 - Introduce yourself
 - Introduce the Project
+- Purpose of the project
 
 History of Enigma
 - Inception
+	- intitally pitched to the German navy and the foreign office, neither was interested.
+	- in 1927 a new Enigma was realeased, which was widely adopted by many contries uncluding the UK, the US, and the Japanesse.
+	- between 1930-1938 the Enigma was altered and adopted by much of the german armed forces.
 - designs
 - uses
 
 History of BOMBE
-- inception
-- design
-- use
+- Polish mathematician–cryptologist Marian Rejewski able to work out the wireing of the Enigma.
+- designed a Logic bombe called the "bomba kryptologiczna"
+	- made up of 6 enigma representations.
+- Re-Designed in 1939 by Alan Turing
+- revised in 1940 by Gordon Welchman
+- Produced by the British Tabulating Machine Company
+- significant development on the polish version of the LOGIC BOMBE
+	- much larger
+	- much faster
 
 History of Parallel
 - inception
 - general ideas
+	- Single Instruction Single Data
+	- Single Instruction Multiple Data
+	- Mulitple Instruction Multiple Data
 - how it is applied in a general sense
 
 The Enigma
-- details about how it works
+- what it does
+- its components
+- how each works
+- the overall design
 - how I will design and make it? Maybe?
 
 The BOMBE
@@ -28,10 +44,6 @@ The BOMBE
 
 Deliverables
 - what they are
-
-Planning
-- Gantt chart maybe?
-- how I will design and make the software, single person agile
 
 Evaluation
 - how the project will be evaluated
