@@ -159,6 +159,8 @@ Neither the Enigma or the BOMBE will allow for continuous input of characters as
 
 The Enigma simulation will output its results to a text file as this will be useful for comparison as well as using the output of the Enigma simulation as the input for the BOMBE simulation as well as having files for both the cipher-text and plain-text that will form the basis of the testing of both simulations. The BOMBE will also output a text file as a result as, again, this will be useful for testing at a later date. 
 
+The parallel BOMBE will be written using the intel compilers, all of the parallelisation will be done through intel tools. The idea behind the parallelisation is to split the search space into parts and have each part run on a different BOMBE representation thus allowing a multicore machine to execute the search for stops over all of it's cores. 
+
 \subsection{Functional Requirements}
 
 \vspace*{6pt}
