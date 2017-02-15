@@ -5,7 +5,7 @@ Introduction
 - Introduce the Project
 - Purpose of the project
 
-History of Enigma
+History of Enigma (QUICKLY)
 - Inception
 	- intitally pitched to the German navy and the foreign office, neither was interested.
 	- in 1927 a new Enigma was realeased, which was widely adopted by many contries uncluding the UK, the US, and the Japanesse.
@@ -13,7 +13,7 @@ History of Enigma
 - designs
 - uses
 
-History of BOMBE
+History of BOMBE (QUICKLY)
 - Polish mathematician–cryptologist Marian Rejewski able to work out the wireing of the Enigma.
 - designed a Logic bombe called the "bomba kryptologiczna"
 	- made up of 6 enigma representations.
@@ -24,7 +24,7 @@ History of BOMBE
 	- much larger
 	- much faster
 
-History of Parallel
+History of Parallel (QUICKLY)
 - inception
 - general ideas
 	- Single Instruction Single Data
@@ -32,12 +32,12 @@ History of Parallel
 	- Mulitple Instruction Multiple Data
 - how it is applied in a general sense
 
-The Enigma
-- what it does
+The Enigma 
+- What it was designed for
 - its components
+- go through the diagram
 - how each works
 - the overall design
-- how I will design and make it? Maybe?
 
 The BOMBE
 - details on how it works
