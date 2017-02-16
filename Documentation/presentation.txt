@@ -32,7 +32,7 @@ History of Parallel (QUICKLY)
 	- Mulitple Instruction Multiple Data
 - how it is applied in a general sense
 
-The Enigma 
+The Enigm 
 - What it was designed for
 - its components
 - go through the diagram
