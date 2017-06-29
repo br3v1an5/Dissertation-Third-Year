@@ -84,7 +84,7 @@ int setup()
 		}
 	}
 
-	/*
+	
 	printf("Plugboard:");
 	for (int x=0; x<25; x++)
 	{
@@ -112,7 +112,7 @@ int setup()
 		printf(" %i,", displacement_data[x]);
 	}
 	printf(" %i\n", displacement_data[2]);
-	*/
+	
 	
 
 	return 1;
