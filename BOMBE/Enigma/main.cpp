@@ -55,12 +55,12 @@ void setup()
 
 	else cout << "Unable to open file";
 
-	//printf("Input:");
+	printf("Input:");
 	for (int x=0; x<57; x++)
 	{
-		//printf(" %i,", input_data[x]);
+		printf(" %i,", input_data[x]);
 	}
-	//printf(" %i\n", input_data[57]);
+	printf(" %i\n", input_data[57]);
 
 	for (int x=0; x<58; x++)
 	{
@@ -83,43 +83,43 @@ void setup()
 	}
 
 	
-	//printf("Plugboard:");
+	printf("Plugboard:");
 	for (int x=0; x<25; x++)
 	{
-		//printf(" %i,", plugboard_data[x]);
+		printf(" %i,", plugboard_data[x]);
 	}
-	//printf(" %i\n", plugboard_data[25]);
+	printf(" %i\n", plugboard_data[25]);
 
-	//printf("Reflector:");
+	printf("Reflector:");
 	for (int x=0; x<25; x++)
 	{
-		//printf(" %i,", reflector_data[x]);
+		printf(" %i,", reflector_data[x]);
 	}
-	//printf(" %i\n", reflector_data[25]);
+	printf(" %i\n", reflector_data[25]);
 
-	//printf("Rotors:");
+	printf("Rotors:");
 	for (int x=0; x<2; x++)
 	{
-		//printf(" %i,", rotors_data[x]);
+		printf(" %i,", rotors_data[x]);
 	}
-	//printf(" %i\n", rotors_data[2]);
+	printf(" %i\n", rotors_data[2]);
 
-	//printf("Rotor Details:\n");
+	printf("Rotor Details:\n");
 	for (int x=0; x<3; x++)
 	{
 		for (int y=0; y<25; y++)
 		{
-			//printf(" %i,	", rotors[x][y]);
+			printf(" %i,	", rotors[x][y]);
 		}
-		//printf(" %i\n", rotors[x][25]);
+		printf(" %i\n", rotors[x][25]);
 	}
 
-	//printf("Displacement:");
+	printf("Displacement:");
 	for (int x=0; x<2; x++)
 	{
-		//printf(" %i,", displacement_data[x]);
+		printf(" %i,", displacement_data[x]);
 	}
-	//printf(" %i\n", displacement_data[2]);
+	printf(" %i\n", displacement_data[2]);
 }
 
 int runEnigma(char* input)
@@ -130,8 +130,8 @@ int runEnigma(char* input)
 
 	plaintext = input;
 	ciphertext = input;
-	//printf("Plaintext: ");
-	//printf("%s\n", plaintext);
+	printf("Plaintext: ");
+	printf("%s\n", plaintext);
 
 	setup_plugboard(plugboard_data);
 	// setup the plugboard
@@ -142,52 +142,52 @@ int runEnigma(char* input)
 	int toEncrypt;
 
 	for (int i=0; i<strlen(plaintext); i++){
-		//printf("%c\n", plaintext[i]);
+		printf("%c\n", plaintext[i]);
 
 		toEncrypt =  convert_char_to_int(plaintext[i]);
 		// convert the chars to corresponding ints
-		//printf("Char to Int: %d\n", toEncrypt);
+		printf("Char to Int: %d\n", toEncrypt);
 
 		toEncrypt = plugboard_forward(toEncrypt);
 		// use the plugboard
-		//printf("After the Plugboard: %d\n", toEncrypt);
+		printf("After the Plugboard: %d\n", toEncrypt);
 
 		// store the first rotor
 		// used the first rotor
 		toEncrypt = rotors[
 			rotors_data[0] - 1][
 			(toEncrypt + displacement_data[0]) % 26];
-		//printf("After the first rotor: %d\n", toEncrypt);
+		printf("After the first rotor: %d\n", toEncrypt);
 
 		// store the second rotor
 		// use the second rotor
 		toEncrypt = rotors[
 			rotors_data[1] - 1][
 			(toEncrypt + displacement_data[0]) % 26];
-		//printf("After the second rotor: %d\n", toEncrypt);
+		printf("After the second rotor: %d\n", toEncrypt);
 
 		// store the third rotor
 		// use the thrid rotor
 		toEncrypt = rotors[
 			rotors_data[2] - 1][
 			(toEncrypt + displacement_data[0]) % 26];
-		//printf("After the third rotor: %d\n", toEncrypt);
+		printf("After the third rotor: %d\n", toEncrypt);
 
 		// use the reflector
 		toEncrypt = get_reflection(toEncrypt);
-		//printf("After reflection: %d\n", toEncrypt);
+		printf("After reflection: %d\n", toEncrypt);
 
 		// back through the third rotor
 		toEncrypt = get_rotor_reverse(rotors_data[2] - 1, toEncrypt);
-		//printf("After the third rotor: %d\n", toEncrypt);
+		printf("After the third rotor: %d\n", toEncrypt);
 
 		// back through the second rotor
 		toEncrypt = get_rotor_reverse(rotors_data[1] - 1, toEncrypt);
-		//printf("After the second rotor: %d\n", toEncrypt);
+		printf("After the second rotor: %d\n", toEncrypt);
 
 		// back through the first rotor
 		toEncrypt = get_rotor_reverse(rotors_data[0] - 1, toEncrypt);
-		//printf("After the first rotor: %d\n", toEncrypt);
+		printf("After the first rotor: %d\n", toEncrypt);
 
 		// do turnover for all rotors
 
@@ -210,17 +210,17 @@ int runEnigma(char* input)
 
 		// back through the plugboard
 		toEncrypt = plugboard_back(toEncrypt);
-		//printf("After the plugboard: %d\n", toEncrypt);
+		printf("After the plugboard: %d\n", toEncrypt);
 
 		ciphertext[i] = convert_int_to_char(toEncrypt);
 		// convert the fully encrypted int back to a char
 
-		////printf("Done: %c\n", ciphertext[i]);
-		// //print the encrypted letter
+		//printf("Done: %c\n", ciphertext[i]);
+		// print the encrypted letter
 	}
 
-	//printf("Ciphertext: ");
-	//printf("%s\n", ciphertext);
+	printf("Ciphertext: ");
+	printf("%s\n", ciphertext);
 
 	ofstream setupFileOut;
   	setupFileOut.open ("Enigma/setup.txt");
