@@ -1,0 +1,1 @@
+int enigma(char*, int*, int*, int*, int*);

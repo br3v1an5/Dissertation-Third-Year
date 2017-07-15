@@ -55,14 +55,12 @@ int setup()
 
 	else cout << "Unable to open file";
 
-	/*
-	printf("Input:");
+	//printf("Input:");
 	for (int x=0; x<57; x++)
 	{
-		printf(" %i,", input_data[x]);
+		//printf(" %i,", input_data[x]);
 	}
-	printf(" %i\n", input_data[57]);
-	*/
+	//printf(" %i\n", input_data[57]);
 
 	for (int x=0; x<58; x++)
 	{
@@ -84,35 +82,45 @@ int setup()
 		}
 	}
 
-	/*
-	printf("Plugboard:");
+	
+	//printf("Plugboard:");
 	for (int x=0; x<25; x++)
 	{
-		printf(" %i,", plugboard_data[x]);
+		//printf(" %i,", plugboard_data[x]);
 	}
-	printf(" %i\n", plugboard_data[25]);
+	//printf(" %i\n", plugboard_data[25]);
 
-	printf("Reflector:");
+	//printf("Reflector:");
 	for (int x=0; x<25; x++)
 	{
-		printf(" %i,", reflector_data[x]);
+		//printf(" %i,", reflector_data[x]);
 	}
-	printf(" %i\n", reflector_data[25]);
+	//printf(" %i\n", reflector_data[25]);
 
-	printf("Rotors:");
+	//printf("Rotors:");
 	for (int x=0; x<2; x++)
 	{
-		printf(" %i,", rotors_data[x]);
+		//printf(" %i,", rotors_data[x]);
 	}
-	printf(" %i\n", rotors_data[2]);
+	//printf(" %i\n", rotors_data[2]);
 
-	printf("Displacement:");
+	//printf("Rotor Details:\n");
+	for (int x=0; x<3; x++)
+	{
+		for (int y=0; y<25; y++)
+		{
+			//printf(" %i,	", rotors[x][y]);
+		}
+		//printf(" %i\n", rotors[x][25]);
+	}
+
+	//printf("Displacement:");
 	for (int x=0; x<2; x++)
 	{
-		printf(" %i,", displacement_data[x]);
+		//printf(" %i,", displacement_data[x]);
 	}
-	printf(" %i\n", displacement_data[2]);
-	*/
+	//printf(" %i\n", displacement_data[2]);
+	
 	
 
 	return 1;
@@ -126,7 +134,7 @@ int main(int argc, char* argv[])
 
 	plaintext = argv[1];
 	ciphertext = argv[1];
-	printf("Plaintext: ");
+	printf("Plaintext:	");
 	printf("%s\n", plaintext);
 
 	setup_plugboard(plugboard_data);
@@ -174,7 +182,7 @@ int main(int argc, char* argv[])
 		//printf("After reflection: %d\n", toEncrypt);
 
 		// back through the third rotor
-		toEncrypt = get_rotor_reverse(rotors_data[0] - 1, toEncrypt);
+		toEncrypt = get_rotor_reverse(rotors_data[2] - 1, toEncrypt);
 		//printf("After the third rotor: %d\n", toEncrypt);
 
 		// back through the second rotor
@@ -182,7 +190,7 @@ int main(int argc, char* argv[])
 		//printf("After the second rotor: %d\n", toEncrypt);
 
 		// back through the first rotor
-		toEncrypt = get_rotor_reverse(rotors_data[2] - 1, toEncrypt);
+		toEncrypt = get_rotor_reverse(rotors_data[0] - 1, toEncrypt);
 		//printf("After the first rotor: %d\n", toEncrypt);
 
 		// do turnover for all rotors
@@ -190,27 +198,19 @@ int main(int argc, char* argv[])
 		displacement_data[0] = displacement_data[0] + 1;
 		// turn the first rotor every time that it is used
 
-		if (displacement_data[0] == turnovers[rotors_data[0]][0] || displacement_data[0] == turnovers[rotors_data[0]][1]){
+		if (displacement_data[0] == turnovers[rotors_data[0] - 1][0] || displacement_data[0] == turnovers[rotors_data[0] - 1][1] || displacement_data[0] == 25){
 			// if the first rotor reaches one if its turnover points then step the second rotor
 			displacement_data[1] = displacement_data[1] + 1;
+
+			if (displacement_data[1] == turnovers[rotors_data[1] - 1][0] || displacement_data[1] == turnovers[rotors_data[1] - 1][1] || displacement_data[1] == 25){
+				// if the second rotor reaches one of its turnover points then step the thrid rotor
+				displacement_data[2] = displacement_data[2] + 1;
+			}
 		}
 
-		if (displacement_data[0] + 1 % 26 == 0){
-			// if the first rotor has rotated fully then step the second rotor
-			displacement_data[0] = 0;
-			displacement_data[1] = displacement_data[1] + 1;
-		}
-
-		if (displacement_data[1] == turnovers[rotors_data[1]][0] || displacement_data[1] == turnovers[rotors_data[1]][1]){
-			// if the second rotor reaches one of its turnover points then step the thrid rotor
-			displacement_data[2] = displacement_data[2] + 1;
-		}
-
-		if (displacement_data[1] + 1 % 26 == 0){
-			// if the second rotor has rotated fully then step the third rotor
-			displacement_data[1] = 0;
-			displacement_data[2] = displacement_data[2] + 1;
-		}
+		displacement_data[0] = displacement_data[0] % 26;
+		displacement_data[1] = displacement_data[1] % 26;
+		displacement_data[2] = displacement_data[2] % 26;
 
 		// back through the plugboard
 		toEncrypt = plugboard_back(toEncrypt);
@@ -223,8 +223,49 @@ int main(int argc, char* argv[])
 		// print the encrypted letter
 	}
 
-	printf("Ciphertext: ");
-	printf("%s\n", ciphertext);	
+	printf("Ciphertext:	");
+	printf("%s\n", ciphertext);
+
+	ofstream setupFileOut;
+  	setupFileOut.open ("setup.txt");
+
+  	setupFileOut << "[";
+  	for (int x=0; x<25; x++)
+  	{
+  		setupFileOut << plugboard_data[x];
+  		setupFileOut << ",";
+  	}
+  	setupFileOut << plugboard_data[25];
+  	setupFileOut << "]\n";
+
+  	setupFileOut << "[";
+  	for (int x=0; x<25; x++)
+  	{
+  		setupFileOut << reflector_data[x];
+  		setupFileOut << ",";
+  	}
+  	setupFileOut << reflector_data[25];
+  	setupFileOut << "]\n";
+
+  	setupFileOut << "[";
+  	for (int x=0; x<2; x++)
+  	{
+  		setupFileOut << rotors_data[x];
+  		setupFileOut << ",";
+  	}
+  	setupFileOut << rotors_data[2];
+  	setupFileOut << "]\n";
+
+  	setupFileOut << "[";
+  	for (int x=0; x<2; x++)
+  	{
+  		setupFileOut << displacement_data[x];
+  		setupFileOut << ",";
+  	}
+  	setupFileOut << displacement_data[2];
+  	setupFileOut << "]\n";
+
+  	setupFileOut.close();
 
 	return 1;
 }

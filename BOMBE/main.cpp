@@ -17,11 +17,16 @@ g++ -std=c++11 main.cpp -o main
 #include <string>
 using namespace std;
 
-#include "Enigma/main.cpp"
-#include "Enigma/main.h"
+#include "EnigmaClone/main.cpp"
+#include "EnigmaClone/main.h"
 
 char* BOMBEplaintext;
 char* BOMBEciphertext;
+
+int input_plugboard_data [] = {4,22,13,17,24,20,14,21,11,23,1,9,10,15,12,7,16,2,8,19,5,25,3,0,18,6};
+int input_reflector_data [] = {25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0};
+int input_rotors_data [] = {1,2,3};
+int input_displacement_data [] = {0,0,0};
 
 
 
@@ -39,6 +44,7 @@ int main(int argc, char* argv[])
 
 	printf("%s\n", BOMBEplaintext);
 	printf("%s\n", BOMBEciphertext);
+	printf("\n");
 
 	// Go through every single possible position, if it encodes the first one, then try the second with the next poistion
 	// continue until all characters are encoded
@@ -52,14 +58,57 @@ int main(int argc, char* argv[])
 
 	// if the plaintext is encrypted as the ciphertext then return the settings
 
-	runEnigma(BOMBEplaintext);
+	// how to be able to run enigma with command line parameters????
+	// first make it run from here
 
-	printf("%s\n", BOMBEciphertext);
-	printf("%s\n", ciphertext);
-
-	if (strcmp(BOMBEciphertext,ciphertext) == 0)
+	for (int x = 0; x < 26; ++x)
 	{
-		printf("It only works :D\n");
+		for (int y = 0; y < 26; ++y)
+		{
+			for (int z = 0; z < 26; ++z)
+			{
+				input_displacement_data[0] = z;
+				input_displacement_data[1] = y;
+				input_displacement_data[2] = x;
+
+				enigma(BOMBEplaintext, input_plugboard_data, input_reflector_data, input_rotors_data, input_displacement_data);
+
+				for (int i = 0; i < 26; ++i)
+				{
+					printf("%d,", input_plugboard_data[i]);
+				}
+				printf("\n");
+				for (int i = 0; i < 26; ++i)
+				{
+					printf("%d,", input_reflector_data[i]);
+				}
+				printf("\n");
+				for (int i = 0; i < 3; ++i)
+				{
+					printf("%d,", input_rotors_data[i]);
+				}
+				printf("\n");
+				for (int i = 0; i < 3; ++i)
+				{
+					printf("%d,", input_displacement_data[i]);
+				}
+				printf("\n");
+
+				printf("%s\n", plaintext);
+				printf("%s\n", ciphertext);
+				printf("\n");
+
+				if (strcmp(BOMBEciphertext,ciphertext) == 0)
+				{
+					printf("It only works :D\n");
+					for (int i = 0; i < 3; ++i)
+					{
+						printf("%d\n", input_displacement_data[i]);
+					}
+					return 1;
+				}
+			}
+		}
 	}
 
 	return 1;
