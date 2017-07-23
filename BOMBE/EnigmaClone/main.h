@@ -1,1 +1,1 @@
-int enigma(char*, int*, int*, int*, int*);
+int enigma(char*, char*, int*, int*, int*, int*);

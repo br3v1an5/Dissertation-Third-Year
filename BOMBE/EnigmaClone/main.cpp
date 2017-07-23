@@ -32,6 +32,8 @@ int rotors_data[3];
 int displacement_data[3];
 char* plaintext;
 char* ciphertext;
+int memoryLength;
+bool matches;
 
 /*
 char* validate_input(char* input){
@@ -39,7 +41,7 @@ char* validate_input(char* input){
 }
 */
 
-int enigma(char* input, int inputPlugboard[26], int inputReflector[26], int inputRotors[3], int inputDisplacement[3])
+int enigma(char* input1, char* input2, int inputPlugboard[26], int inputReflector[26], int inputRotors[3], int inputDisplacement[3])
 {
 	for (int i = 0; i < 26; ++i)
 	{
@@ -53,12 +55,25 @@ int enigma(char* input, int inputPlugboard[26], int inputReflector[26], int inpu
 		displacement_data[i] = inputDisplacement[i];
 	}
 
-	plaintext = input;
-	ciphertext = input;
-	printf("Plaintext:	");
-	printf("%s\n", plaintext);
-	printf("Ciphertext:	");
-	printf("%s\n", ciphertext);
+	plaintext = input1;
+	ciphertext = input2;
+	//printf("Plaintext:	");
+	//printf("%s\n", plaintext);
+	//printf("Ciphertext:	");
+	//printf("%s\n", ciphertext);
+
+	memoryLength = strlen(plaintext);
+	char *result = new char[memoryLength];
+	for (int i = 0; i < memoryLength; ++i)
+	{
+		result[i] = plaintext[i];
+	}
+
+	//printf("Result:	");
+	//printf("%s\n", result);
+
+	//printf("AT THIS POINT THINGS OCCUR\n");
+	printf("");
 
 	setup_plugboard(plugboard_data);
 	// setup the plugboard
@@ -139,17 +154,34 @@ int enigma(char* input, int inputPlugboard[26], int inputReflector[26], int inpu
 		toEncrypt = plugboard_back(toEncrypt);
 		//printf("After the plugboard: %d\n", toEncrypt);
 
-		ciphertext[i] = convert_int_to_char(toEncrypt);
+		result[i] = convert_int_to_char(toEncrypt);
 		// convert the fully encrypted int back to a char
 
 		//printf("Done: %c\n", ciphertext[i]);
 		// print the encrypted letter
 	}
 
-	printf("Plaintext:	");
-	printf("%s\n", input);
-	printf("Ciphertext:	");
-	printf("%s\n", ciphertext);
+	//printf("Plaintext:	");
+	//printf("%s\n", plaintext);
+	//printf("Ciphertext:	");
+	//printf("%s\n", ciphertext);
+	//printf("Result:	");
+	//printf("%s\n", result);
 
-	return 1;
+	if( strcmp(result,ciphertext) == 0 )
+	{
+		//printf("THEY ARE THE SAME\n");
+		matches = true;
+	}
+	else
+	{
+		matches = false;
+	}
+
+	//printf("END OF THINGS OCCURING\n");
+	//printf("\n");
+
+	delete[] result;
+
+	return 0;
 }

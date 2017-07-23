@@ -61,51 +61,65 @@ int main(int argc, char* argv[])
 	// how to be able to run enigma with command line parameters????
 	// first make it run from here
 
-	for (int x = 0; x < 26; ++x)
+	for (int rotor1 = 1; rotor1 < 9; rotor1++)
 	{
-		for (int y = 0; y < 26; ++y)
+		for (int rotor2 = 1; rotor2 < 9; rotor2++)
 		{
-			for (int z = 0; z < 26; ++z)
+			for (int rotor3 = 1; rotor3 < 9; rotor3++)
 			{
-				input_displacement_data[0] = z;
-				input_displacement_data[1] = y;
-				input_displacement_data[2] = x;
+				if (rotor1 != rotor2 and rotor1 != rotor3 and rotor2 != rotor3)
+				{
+					input_rotors_data[0] = rotor1;
+					input_rotors_data[1] = rotor2;
+					input_rotors_data[2] = rotor3;
 
-				enigma(BOMBEplaintext, input_plugboard_data, input_reflector_data, input_rotors_data, input_displacement_data);
+					// MAKE SURE THAT THE ROTOR DATA IS CORRECT
 
-				for (int i = 0; i < 26; ++i)
-				{
-					printf("%d,", input_plugboard_data[i]);
-				}
-				printf("\n");
-				for (int i = 0; i < 26; ++i)
-				{
-					printf("%d,", input_reflector_data[i]);
-				}
-				printf("\n");
-				for (int i = 0; i < 3; ++i)
-				{
-					printf("%d,", input_rotors_data[i]);
-				}
-				printf("\n");
-				for (int i = 0; i < 3; ++i)
-				{
-					printf("%d,", input_displacement_data[i]);
-				}
-				printf("\n");
-
-				printf("%s\n", plaintext);
-				printf("%s\n", ciphertext);
-				printf("\n");
-
-				if (strcmp(BOMBEciphertext,ciphertext) == 0)
-				{
-					printf("It only works :D\n");
-					for (int i = 0; i < 3; ++i)
+					for (int x = 0; x < 26; ++x)
 					{
-						printf("%d\n", input_displacement_data[i]);
+						for (int y = 0; y < 26; ++y)
+						{
+							for (int z = 0; z < 26; ++z)
+							{
+								input_displacement_data[0] = z;
+								input_displacement_data[1] = y;
+								input_displacement_data[2] = x;
+
+								// MAKE SURE THAT THE DISPLACEMENT DATA IS CORRECT
+
+								enigma(BOMBEplaintext, BOMBEciphertext, input_plugboard_data, input_reflector_data, input_rotors_data, input_displacement_data);
+
+								if (matches)
+								{
+									for (int i = 0; i < 26; ++i)
+									{
+										printf("%d,", input_plugboard_data[i]);
+									}
+									printf("\n");
+									for (int i = 0; i < 26; ++i)
+									{
+										printf("%d,", input_reflector_data[i]);
+									}
+									printf("\n");
+									for (int i = 0; i < 3; ++i)
+									{
+										printf("%d,", input_rotors_data[i]);
+									}
+									printf("\n");
+									for (int i = 0; i < 3; ++i)
+									{
+										printf("%d,", input_displacement_data[i]);
+									}
+									printf("\n");
+
+									return 1;
+								}
+
+								//printf("\n");
+
+							}
+						}
 					}
-					return 1;
 				}
 			}
 		}
