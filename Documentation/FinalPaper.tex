@@ -4,6 +4,7 @@
 \usepackage{harvard}
 \usepackage{graphicx}
 \usepackage{longtable}
+\usepackage{siunitx}
 
 \citationmode{abbr}
 \bibliographystyle{agsm}
@@ -20,13 +21,15 @@
 
 \begin{abstract}\\
 
-{\bf Context/Background} - Can antiquated ideas and designs be brought up to speed in the modern day? The aim of this paper is to show the plausibility of this using the Enigma and the BOMBE, two cryptographic devices from the second world war, these will be modernised and tested to prove this hypothesis.\\
+{\bf Context/Background} - The Enigma and BOMBE formed the basis of communication throughout the Axis powers. Technology has advanced since then, but how much? This will be the foundation of this paper, how much faster are we now, than then?\\
 
 {\bf Aims} - Using the known execution speed of the antique Enigma and BOMBE, the aim of this paper is to show, through implementation and testing of a modern interpretation of the Enigma and BOMBE, the magnitude of speed up that has occurred since the inception of both.\\
 
-{\bf Method} - After both the Enigma and BOMBE are implemented the BOMBE will then be improved on using parallelisation techniques. Each will then be tested. The time taken for a standard Enigma machine to encrypt, the computerised version to encrypt and the parallelised version to encrypt will be compared to one another to give a good indication of the improvements over time. Another comparison will be made between the standard Enigma, the computerised Enigma and the parallelised Enigma, this should re-enforce the indication of computer improvements.\\
+{\bf Method} - Both machines have been re-created using modern technology and techniques, they have been timed, and this measurement will be compared to the same measurement on the original machine.\\
 
-{\bf Proposed Solution} - The Enigma machine will be implemented through C++ code, this will form the baseline for a modern interpretation of the machine as it will not run anything in parallel. This code will then be parallelised using different standardised tools and techniques, these will then be used as the final comparison to show the significant increases in performance that this seemingly antiquated idea can expect across different inputs.\\
+{\bf Results} - The modern versions of both are far faster than their antiquated counterparts. The magnitude of which can be seen in the results section.\\ Needs more \\
+
+{\bf Conclusions} - The significant leaps that have been made in computing in the last 70 years cannot be overstated, The development from electro-mechanical devices to the silicon based computers we have today are astounding.
 \end{abstract}
 
 \begin{keywords}
@@ -37,11 +40,13 @@ Enigma, BOMBE, Parallel, Modern, Computation, Evaluation, Reinterpretation, Comp
 
 \section{Introduction}
 
+\iffalse
 What the project is about - talk through the motivations and a rough outline of the project\\
 The project aims to show that a significant speed up has occurred in the field of computation since the inception of this cryptographic technique.
 Context of the project - what are some real world things that need to be taken into account\\
 What was achieved - go through deliverables and then go through issues and counter\\
 2-3 pages\\
+\fi
 
 Since the time of Alan Turing, the developments of computational power cannot be understated. We have developed from electromechanical devices that have a single function, to electronic devices that are capable of renders and simulations of electromechanical devices within themselves, the BOMBE is an example of an electromechanical device and this can be rendered and simulated within a modern mobile device, let alone the cutting edge, which at the time, the BOMBE was. Within more cutting edge technology we are able to study models of the universe, and other academic pursuits that were inconceivable at the time of Alan Turing.\\
 
@@ -49,28 +54,29 @@ Alan Turing is the man that is credited with the creation of the BOMBE, this ele
 
 The motivations of this project are two fold, the first is to show the effectiveness of both the Enigma machine and the BOMBE. This will be done via the implementation of both in a modern setting. The second is to outline the developments that have occurred since the inception of the Enigma and BOMBE, by showing the significant increase in computational efficiency, an analogue for this would be how fast the BOMBE breaks the Enigma code. The most simple solution will be a BOMBE representation using modern coding techniques without any parallel improvement or any other modern techniques. This will be purely a copy of the enigma, in C++ code. This will outline the improvements between an electromechanical device and the sequential electronic devices that have been common from around the 1980s. The second, more complex solution will incorporate parallel programming, this was introduced in the early 21st century, and is still an improving technology.\\
 
+\subsection{Deliverables}
+
+\label{units}
+\begin{longtable}{ |p{1.25cm}|p{4cm}|p{7cm}| }\hline\hline
+Unique ID & Deliverable & Description \\ \hline
+DL1 & Simulate the Enigma Machine & Have a working Enigma machine that can take in settings and plaintext and return ciphertext. \\ \hline
+DL2 & Simulate the Bombe & A working BOMBE that takes in settings and ciphertext and returns decoded plaintext. \\ \hline
+DL3 & Show the correctness of the Enigma Machine & Show through a series of tests and validations that the plaintext fed to the Enigma Machine and the Ciphertext returned are paired through the settings of the enigma \\ \hline
+DL4 & Show the correctness of the BOMBE & Show that the known plaintext of the ciphertext input into the BOMBE is exactly the same as the plaintext that is returned by the BOMBE \\ \hline
+DL5 & Evaluate average computation time over set inputs for both Enigma and BOMBE & Using a wide range of known plaintext - ciphertext pairs find the average computation time, the time take on average to do a single encode or decode for both simulations \\ \hline
+DL6 & Parallelise The BOMBE and evaluate average computation time & Using known parallelisation techniques increase the speed at which the BOMBE will decode a given ciphertext \\ \hline
+\end{longtable}
+
 \section{Related Work}
 
+\iffalse
 Survey relevant literature\\
 Relate to your own project\\
+This should contain all details of the OG BOMBE and Enigma\\
 May be able to reuse parts of the literature survey\\
 use anything relating to parallel computing, the introduction of common single core computing, the introduction of C++ code, the development of the intel tool set, any historical papers about the enigma code, anything about the BOMBE, anything about the measurement of computational improvements.\\
-2 pages
-
-\section{Solution}
-
-Overview of architecture and design - use parts from the design report\\
-Description of tools used - design report\\
-Outline of algorithms to be used - design report\\
-Features of the implementation process - issues and struggles with the implementation, how they were overcome\\
-Testing - validation and all other testing done\\
-Verification and validation\\
-Stages of the life cycle undertaken - software engineering\\
-4-7 pages\\
-
-\subsection{Enigma}
-
-C++ was chosen as the implementation language for the enigma mainly due to its rich library, it has support for a wide range of external libraries, the main one we will be focused on in this case is the Intel tool set, this may not be much use when it comes to the Enigma but it is a very strong and well established tool that allows C or C++ code to be parallelised which is the aim of the BOMBE implementation that will be outlined later. The reason that C++ was chosen specifically for the Enigma implementation is that it is a middle level language and thus enables the benefits of low level and high level languages as well as being highly portable and non operating system specific. It is also very well established in the teaching at Durham University.\\
+2 pages\\
+\fi
 
 The electromechanical device known as the Enigma machine is best known for its use by the Third Reich, it was first designed by a company called Scherbius \& Ritter in 1918, and then sold to the German armed forces, after a few incremental upgrades. The machine is designed to allow secure cryptographic messages between two of these machines, the first will encode the message using decided settings, the second will, using the same setting, decode the message. This is done through a set of alphabet mapping, a one to one relationship between one alphabet and another, one letter is mapped to another and this relationship is bidirectional. No two letters from one alphabet map to the same letter in another.\\
 
@@ -79,6 +85,63 @@ The Enigma machine is made up of 7 parts, there are only 5 important parts plus 
 The plug-board is a mapping from one alphabet to another that is a manual process of re-plugging 26 wires that map from one to the other. This does not change for each letter that is input into the device, unlike some of the components we will see later. The reflector is much the same as the plug-board, except that it cannot map a letter to itself. It is a simple one to one mapping that does not change over time, in the earlier designs of the Enigma machine, it could not be rewired, and instead had to be swapped out for another reflector with different wiring, in a similar way to that of the rotors that we discus later on, with later designs came the ability to rewire it. The rotors are the core of the machine. These are three modular, circular, mappings that are altered each time a letter is encrypted by the machine. The way they work is that the inner ring and outer ring each have contacts on them, when the outer ring is rotated then the mapping will change. there are 26 different mappings that can be used. The three rotors are chosen from a set of available rotors and each one has a unique ordering of letters on both its rings. Thus the order in which the rotors are input into the machine is important.\\
 
 The enigma machine will take the first letter of the message that is to be encrypted from a keyboard and first pass it through the plug-board, it will then go to a converter which allows the signal to be passed to the first rotor, another mapping, then the second, and the third, in each of these case the inner ring of the previous rotor is connected to the outer ring of the next rotor. Then the reflector is reached, the mapped letter is then passed to the inner ring of the third rotor and this is a reverse mapping. The outer ring of the third rotor is connected to the inner ring of the second rotor and thus the signal will pass back through the rotors in this fashion. Once the plug-board is reached, the reverse mapping is done and a light will trigger on the lamp-board showing the letter that the input letter has been mapped to. After this the rotors are then stepped, this means that the first rotor will rotate one position for each letter that is encrypted. The second rotor will only step when specific notches are reached on the first rotor, the third is the same but for notches on the second rotor. Based on this method the first rotor will rotate more than the second and the second will rotate more than the third.\\
+
+The BOMBE developed at Beletchly Park was very similar to the Enigma, but its antithesis. The BOMBE was based on a probably phrase attack, this means that for the BOMBE to work there needs to exist a known or guessed portion of ciphertext and its corresponding plaintext. An example of this that was used regularly was the German equivalent of "Weather Report", this was done daily and could easily be guessed. Once this was established then the exact letter to letter transformation must be established, this is done through the matching of letter to letter in the phrase such that no letter is encoded as itself as this is impossible for the enigma. Examples of these matching shown in figure 1.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{StageOneBOMBE.png}
+\end{figure}
+
+The next stage of preprocessing is the creation of crib-ciphertext pairings. This is the mapping of a specific letter at a specific set up of the enigma. For example in the figure above we can see that T maps to E at the first set up of the Enigma, at the second set up of the Enigma, because due to the rotor stepping we are now in a different set up, H maps to J, and so on. These pairs can then be joined to create a graph of pairings with the numbered setting as a label for the edge, a random example is shown in figure 2.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{StageTwoBOMBE.png}
+\end{figure}
+
+There are significant implications that can be drawn from the connection network, the graph of pairings in figure two. Using the connection network the search space can be reduced by using the implications of some transformations on others. We first must recall that each transformation consists of two 'stecker swappings' and a 'scrambler encryption' these are the set of rotor transformation and reflector respectively. A 'stecker swapping' is the transformation of a letter through use of the three rotors that are present in the enigma, a 'scrambler encryption' is the transformation via the reflector, and then another 'stecker swapping' is the use of the reverse direction of the rotors. A relative position is the numbered set up that the enigma is currently in, so the first letter input into the enigma machine is using relative position 1, which is simply a set up of the enigma, relative position two is the set up of the enigma given that a letter has already been input and that the set up has changed due to the way the rotors behave. Using the connection network above, here is an example of the search space reduction that can be done using these details.\\
+
+For example, let us test the hypothesis that E is mapped to K through the first three rotors, also known as E is "steckered" to K. Now consider how E is transformed into A at relative position 23, this is shown on the connection network above.
+
+If E is "steckered" to K, K will be input to the reflector or "scrambler" at relative position 23 which will output some other letter L1. Since we know that E transforms into A at relative position 23, we know that A must be "steckered" to L1.
+
+But if A is "steckered" to L1, L1 will be input to the "scrambler" at relative position 21 which will output some other letter L2. Since we know that A transforms into I at relative position 21, we know that I must be "steckered" to L2.
+
+But if I is "steckered" to L2, L2 will be input to the "scrambler" at relative position 3 which will output some other letter L3. Since we know that I transforms into T at relative position 3, we know that T must be "steckered" to L3.
+
+But if T is "steckered" to L3, L3 will be input to the "scrambler" at relative position 5.
+
+Now consider the output of the "scrambler" at relative position 5 when it receives L3 as its input. Since we know that T transforms into E at relative position 5, we know that the output letter of the "scrambler" at relative position 5 must be "steckered" to E.
+
+Suppose, when given L3 as its input, the "scrambler" at relative position 5 outputs J. By our original hypothesis E is "steckered" to K, but by our chain of implications E is "steckered" to J, so in this case E is "steckered" to both K and J. But the construction of the Enigma does not permit one letter to be "steckered" to two letters, so E cannot be "steckered" to both K and J, so our original hypothesis has resulted in an impossible consequence and so must be false.
+
+But now suppose, when given L3 as its input, the "scrambler" at relative position 5 outputs K. Then by our original hypothesis E is "steckered" to K, and by our chain of implications E is "steckered" to K, so in this case E is "steckered" only to K, thus our original hypothesis has resulted in a consistent consequence and so may be true.
+
+The altered connection network bellow shows the hypothesis that E is "steckered" to K via the the steps of implication that we have been through.
+
+This is the way that the preprocessing that was done helped reduced the search space that it would have to be iterated through by the BOMBE and thus reducing the time taken for a result to be found.
+
+The way the electro-mechanical device was created is very similar to an exploded view of the Enigma, it was created so that there would be no return journey through the rotors, instead another three rotors were added after the reflector. They were added in such a way that one pass through these 7 components is the equivalent of a pass through to the reflector and back through the rotors of the Enigma. The BOMBE was made up of three batteries of 12 sets of these 7 components. With the use of a "menu", also known as the connection network, this monstrous machine could be wired up so as to eliminate as many combinations as possible.
+
+There may be a bit of confusion at this point, the question, "Where has the plug-board gone?" may be asked. This has been removed as it does not change throughout the use of the machine, the same is said of the reflector but this would  be very hard to remove in the same fashion as has been left. The reason that the plug-board can be removed so easily is that is can be easily defeated by frequency analysis, this is the process of matching letter frequencies between the language of the plaintext and the language of the ciphertext, an example; the letter E make up a third of all letter in the plaintext language, the letter R makes up a third of the ciphertext messages, we can therefore assume that E has been transformed to R by the plug-board, this is done for all letter of the plaintext language and with some intuition as to the native language the messages have been sent in, the plaintext can be retrieved. 
+
+\section{Solution}
+
+\iffalse
+Overview of architecture and design - use parts from the design report\\
+Description of tools used - design report\\
+Outline of algorithms to be used - design report\\
+Features of the implementation process - issues and struggles with the implementation, how they were overcome\\
+Testing - validation and all other testing done\\
+Verification and validation\\
+Stages of the life cycle undertaken - software engineering\\
+4-7 pages\\
+\fi
+
+\subsection{Enigma}
+
+C++ was chosen as the implementation language for the enigma mainly due to its rich library, it has support for a wide range of external libraries, the main one we will be focused on in this case is the Intel tool set, this may not be much use when it comes to the Enigma but it is a very strong and well established tool that allows C or C++ code to be parallelised which is the aim of the BOMBE implementation that will be outlined later. The reason that C++ was chosen specifically for the Enigma implementation is that it is a middle level language and thus enables the benefits of low level and high level languages as well as being highly portable and non operating system specific. It is also very well established in the teaching at Durham University.\\
 
 The recreation of the enigma machine was to be done in C++, this was chosen as it has significant parallel tools available for it, in the form of the Intel c++ compiler. A tool that has shown great capabilities in parallelism. This would be very helpful in the creation of the advanced BOMBE recreation and developing in two separate languages didn't make sense.\\
 
@@ -96,9 +159,7 @@ The Enigma was built in pieces, firstly to make sure that each functioned as exp
 
 Paragraph talking about why C++ was chosen to implement the BOMBE and another talking about the benefits of the intel tools.\\
 
-Paragraph talking through how the electromechanical version of the BOMBE worked, and any history that is relevant to the paragraph. Another paragraph about any extra details that need to be known such as the known pair attacks\\
-
-The first version of the BOMBE that was recreated in C++ code never actually existed, this was made as a benchmark for the others. In this version we will use a brute force approach with no limitations, that is we will try every combination of setting possible to attempted to map from the input encoded message and the guessed message that it corresponds to. This is done through a similar method to that which was used to make the Enigma Machine. In fact a copy of the exact enigma machine code was used in this implementation. The only difference is the main file and settings file, the main file will rewrite the settings file with each possible setting and then it will be tested, if the results are wrong then the next setting is used, this is done until the settings that were used in this case are found, they will then be output by the main file so that they might be used by an enigma clone to break any other messages that were sent in the same block as the message that was just broken and thus have almost identical settings. The brute force approach is slow. This was known from the start, that is why it was done. This is the slowest that a BOMBE could be using modern techniques. 
+The first version of the BOMBE that was recreated in C++ code never actually existed, this was made as a benchmark for the others. In this version we will use a brute force approach with no limitations, that is we will try every combination of setting possible to attempted to map from the input encoded message and the guessed message that it corresponds to. This is done through a similar method to that which was used to make the Enigma Machine. In fact a copy of the exact enigma machine code was used in this implementation. The only difference is the main file and settings file, the main file will rewrite the settings file with each possible setting and then it will be tested, if the results are wrong then the next setting is used, this is done until the settings that were used in this case are found, they will then be output by the main file so that they might be used by an enigma clone to break any other messages that were sent in the same block as the message that was just broken and thus have almost identical settings. The brute force approach is slow. The reason that this approach is slow is that there are a lot of settings that have to be tested. Each of the components have their own complexity, and thus each have a number of settings that need to be iterated through. The plug-board, this has 26 letters in it, this means that there are 26! ways that this can be encoded, this does not change through usage however, this is a useful feature in the later BOMBE recreations but for this implementation, it is one of the more challenging components. The rotors, there are eight rotors that can be chosen to occupy any one of the three positions, this means that there are 56 different set ups that can be used from the eight rotors, each rotor then has 26 different displacements that can be used, meaning that total there is 17,576 different settings after three rotors have been chosen and 984,256 different set ups if any of the eight rotors can be chosen. The reflector has a very similar complexity of the plug-board however it cannot encode a letter as itself, meaning that there are 25! ways that it can be encoded. The results of this are that the brute force BOMBE has to go through \num{6.15705e57} different settings. The exact number of settings that need to be tested is actually; \num{6157051363093094576378463970354900547389095936000000000000}. This was known from the start, that is why it was done. This is the slowest that a BOMBE could possibly be using modern techniques. \\
 
 Paragraph about the exact re-creation of the BOMBE using all the eliminations possible to minimise the search space.\\
 
