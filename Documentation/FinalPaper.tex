@@ -122,9 +122,42 @@ The altered connection network bellow shows the hypothesis that E is "steckered"
 
 This is the way that the preprocessing that was done helped reduced the search space that it would have to be iterated through by the BOMBE and thus reducing the time taken for a result to be found.
 
-The way the electro-mechanical device was created is very similar to an exploded view of the Enigma, it was created so that there would be no return journey through the rotors, instead another three rotors were added after the reflector. They were added in such a way that one pass through these 7 components is the equivalent of a pass through to the reflector and back through the rotors of the Enigma. The BOMBE was made up of three batteries of 12 sets of these 7 components. With the use of a "menu", also known as the connection network, this monstrous machine could be wired up so as to eliminate as many combinations as possible.
+The way the electro-mechanical device was created is very similar to an exploded view of the Enigma, it was created so that there would be no return journey through the rotors, instead another three rotors were added after the reflector. They were added in such a way that one pass through these 7 components is the equivalent of a pass through to the reflector and back through the rotors of the Enigma. The BOMBE was made up of three batteries of 12 sets of these 7 components. With the use of a "menu", also known as the connection network, this monstrous machine could be wired up so as to eliminate as many combinations as possible.\\
 
+\iffalse
 There may be a bit of confusion at this point, the question, "Where has the plug-board gone?" may be asked. This has been removed as it does not change throughout the use of the machine, the same is said of the reflector but this would  be very hard to remove in the same fashion as has been left. The reason that the plug-board can be removed so easily is that is can be easily defeated by frequency analysis, this is the process of matching letter frequencies between the language of the plaintext and the language of the ciphertext, an example; the letter E make up a third of all letter in the plaintext language, the letter R makes up a third of the ciphertext messages, we can therefore assume that E has been transformed to R by the plug-board, this is done for all letter of the plaintext language and with some intuition as to the native language the messages have been sent in, the plaintext can be retrieved. 
+\fi
+
+The next stage of the BOMBE set up is the plugging-up of the BOMBE. This is done with the help of what is known as a diagonal board, this was created by Gordon Welchman, as it encapsulated the reciprocal property of the Enigma, meaning that if R was steckered to Q then Q was steckered to R and so on for every pair in a specific Enigma set up, this could be used to eliminate parts of the search space. The diagonal board was used in conjunction with the menu or connection network to plug-up the BOMBE. The diagonal board consisted of 26 cables each containing 26 wires leading into and out of it, with a total of 325 connections between them. For example, the a wire in the B cable was permanently connected to the b wire in the A cable, and the a wire in the C cable was permanently connected to the c wire in the A cable, and so on. The effect of the diagonal board, when attached to the bombe, was to increase the feedback into the double-ended scramblers and thus reduce the necessity of obtaining loops in the crib-ciphertext pairing. This in turn made it possible to use shorter menus which were less likely to include a turnover of the Enigma's middle rotor during the encipherment of the plaintext. This is highly advantageous for reasons that will appear later. Once we have a menu and the diagonal board it will be plugged up such that, each rotor bridges two of the diagonal boards cables, when all the rotors have been connected in this way they are rotated to the positions in accordance to the relative positions in the menu. Next we mount the drums on their shafts. We first select a particular rotor order to try. Suppose we try rotors one, two, and three. We mount nine rotors each of which corresponds to rotor number one on the first nine top shafts in a battery, then we mount nine rotors each of which corresponds to rotor number two on the first nine middle shafts in the same battery, then we mount nine rotors each of which corresponds to rotor number three on the first nine lower shafts in the same battery. The other two batteries are now plugged up in exactly the same way except that different drum orders are selected. Note that the loops in the menu are represented by loops in the plugged-up bombe.\\
+
+We will go through a simplified example of this using an eight letter alphabet, as using twenty six would be overwhelming. We will use the first eight letter of the alphabet, and the principles will be identical to that of the twenty six alphabet version of the BOMBE.
+
+\label{Crib and Ciphertext}
+\begin{longtable}{ |p{1.25cm}|p{1.25cm}|p{1.25cm}|p{1.25cm}|p{1.25cm}|p{1.25cm}|p{1.25cm}|p{1.25cm}|p{1.25cm}| }\hline
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\ \hline\hline
+B & E & A & C & H & H & E & A & D \\ \hline
+E & D & B & G & E & A & H & D & B \\ \hline
+\end{longtable}
+
+\begin{figure}[h]
+\centering
+From this table we can derive the menu or connection network.
+\includegraphics[width=0.5\textwidth]{BOMBEone.png}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+This is the equivalent diagonal board for an 8 letter alphabet.
+\includegraphics[width=\textwidth]{BOMBEtwo.png}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+This is the fully plugged up diagram of an eight letter BOMBE.
+\includegraphics[width=\textwidth]{BOMBEthree.png}
+\end{figure}
+
+Once the BOMBE has been plugged up, it will be set in motion, this consists of the top row row of rotors stepping at a rate of 120rpm, with the second row of rotors at 1/26th that, then the third row at 1/26th that. They will continue to step until a "Stop" is reached or the rotors return to their original position. A "Stop" is defined as the transformations defined by the settings used yield the ciphertext from the crib. This was known by the BOMBE due to the test register. This was attached to one of the cables of the diagonal board, the 26 wires in a cable pass through the test register, with the test register being able to tell how many of its wires were "live" at any given time.
 
 \section{Solution}
 
@@ -161,7 +194,7 @@ Paragraph talking about why C++ was chosen to implement the BOMBE and another ta
 
 The first version of the BOMBE that was recreated in C++ code never actually existed, this was made as a benchmark for the others. In this version we will use a brute force approach with no limitations, that is we will try every combination of setting possible to attempted to map from the input encoded message and the guessed message that it corresponds to. This is done through a similar method to that which was used to make the Enigma Machine. In fact a copy of the exact enigma machine code was used in this implementation. The only difference is the main file and settings file, the main file will rewrite the settings file with each possible setting and then it will be tested, if the results are wrong then the next setting is used, this is done until the settings that were used in this case are found, they will then be output by the main file so that they might be used by an enigma clone to break any other messages that were sent in the same block as the message that was just broken and thus have almost identical settings. The brute force approach is slow. The reason that this approach is slow is that there are a lot of settings that have to be tested. Each of the components have their own complexity, and thus each have a number of settings that need to be iterated through. The plug-board, this has 26 letters in it, this means that there are 26! ways that this can be encoded, this does not change through usage however, this is a useful feature in the later BOMBE recreations but for this implementation, it is one of the more challenging components. The rotors, there are eight rotors that can be chosen to occupy any one of the three positions, this means that there are 56 different set ups that can be used from the eight rotors, each rotor then has 26 different displacements that can be used, meaning that total there is 17,576 different settings after three rotors have been chosen and 984,256 different set ups if any of the eight rotors can be chosen. The reflector has a very similar complexity of the plug-board however it cannot encode a letter as itself, meaning that there are 25! ways that it can be encoded. The results of this are that the brute force BOMBE has to go through \num{6.15705e57} different settings. The exact number of settings that need to be tested is actually; \num{6157051363093094576378463970354900547389095936000000000000}. This was known from the start, that is why it was done. This is the slowest that a BOMBE could possibly be using modern techniques. \\
 
-Paragraph about the exact re-creation of the BOMBE using all the eliminations possible to minimise the search space.\\
+The BOMBE recreation in C++ code was done in a very similar way to the Enigma, it is a main file that contains all the details and management, whilst other files contain the details and behaviours of the components that make up the BOMBE. The rotors and reflector as as they are in the Enigma, the files have not changed.
 
 Paragraph talking about the parallelised version of the BOMBE and how it was designed, don't talk about speed up or any issues that were faced.\\
 
@@ -189,8 +222,6 @@ An overview of the project\\
 Brief description of the main findings\\
 Discussion on how the project can be extended\\
 1-2 pages
-
-\subsection{References} 
 
 \bibliography{REF}
 
