@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  8 AUG 2017 17:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  9 AUG 2017 10:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -589,41 +589,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--88
 File: StageOneBOMBE.png Graphic file (type png)
 
 <use StageOneBOMBE.png>
-Package pdftex.def Info: StageOneBOMBE.png used on input line 93.
+Package pdftex.def Info: StageOneBOMBE.png used on input line 94.
 (pdftex.def)             Requested size: 461.13188pt x 149.38483pt.
  <StageTwoBOMBE.png, id=17, 692.5875pt x 433.62pt>
 File: StageTwoBOMBE.png Graphic file (type png)
 
 <use StageTwoBOMBE.png>
-Package pdftex.def Info: StageTwoBOMBE.png used on input line 100.
+Package pdftex.def Info: StageTwoBOMBE.png used on input line 102.
 (pdftex.def)             Requested size: 461.13188pt x 288.71759pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-[4 <./StageOneBOMBE.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
-
- []
-
-[5 <./StageTwoBOMBE.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+[4 <./StageOneBOMBE.png>] [5 <./StageTwoBOMBE.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 140
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 138
  []
 
 <BOMBEone.png, id=26, 404.51125pt x 343.2825pt>
 File: BOMBEone.png Graphic file (type png)
  <use BOMBEone.png>
-Package pdftex.def Info: BOMBEone.png used on input line 145.
+Package pdftex.def Info: BOMBEone.png used on input line 144.
 (pdftex.def)             Requested size: 230.56593pt x 195.6678pt.
 
 
@@ -641,68 +641,87 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <BOMBEthree.png, id=28, 740.7675pt x 538.01pt>
 File: BOMBEthree.png Graphic file (type png)
  <use BOMBEthree.png>
-Package pdftex.def Info: BOMBEthree.png used on input line 157.
+Package pdftex.def Info: BOMBEthree.png used on input line 158.
 (pdftex.def)             Requested size: 461.13188pt x 334.9173pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+[6] <BOMBEfour.png, id=32, 651.43375pt x 542.025pt>
+File: BOMBEfour.png Graphic file (type png)
+ <use BOMBEfour.png>
+Package pdftex.def Info: BOMBEfour.png used on input line 169.
+(pdftex.def)             Requested size: 461.13188pt x 383.69908pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7 <./BOMBEone.png>] <BOMBEfive.png, id=38, 687.56876pt x 544.0325pt>
+File: BOMBEfive.png Graphic file (type png)
+
+<use BOMBEfive.png>
+Package pdftex.def Info: BOMBEfive.png used on input line 177.
+(pdftex.def)             Requested size: 461.13188pt x 364.86514pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8 <./BOMBEtwo.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
-
- []
-
-[7 <./BOMBEone.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
-
- []
-
-[8 <./BOMBEtwo.png>] [9 <./BOMBEthree.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
-
- []
-
-[10]
 Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
 
-
+[9 <./BOMBEthree.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
 
-[11] (./FinalPaper.bbl) [12] (./FinalPaper.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
+
+ []
+
+[10 <./BOMBEfour.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
+
+ []
+
+[11 <./BOMBEfive.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+ []
+
+(./FinalPaper.bbl [14]) [15] (./FinalPaper.aux) ) 
 Here is how much of TeX's memory you used:
- 11292 strings out of 493014
- 239752 string characters out of 6133351
+ 11302 strings out of 493014
+ 239920 string characters out of 6133351
  252712 words of memory out of 5000000
- 14752 multiletter control sequences out of 15000+600000
+ 14760 multiletter control sequences out of 15000+600000
  20737 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,5n,42p,10361b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -715,10 +734,10 @@ lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
 times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb
 i8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on FinalPaper.pdf (12 pages, 1532100 bytes).
+Output written on FinalPaper.pdf (15 pages, 2698535 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 101 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
