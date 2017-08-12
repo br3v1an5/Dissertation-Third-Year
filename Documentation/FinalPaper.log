@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  9 AUG 2017 13:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  12 AUG 2017 15:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -721,7 +721,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 221--222
 
  []
 
-[15] (./FinalPaper.bbl) [16] (./FinalPaper.aux) ) 
+
+Overfull \hbox (1.80777pt too wide) in paragraph at lines 241--242
+[]\OT1/ptm/m/n/12 The strengths of the project mainly lie in the sim-plic-ity o
+f the par-al-lelism ap-plied, the BOMBE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
+
+ []
+
+(./FinalPaper.bbl) [16] (./FinalPaper.aux) ) 
 Here is how much of TeX's memory you used:
  11302 strings out of 493014
  239920 string characters out of 6133351
@@ -730,16 +746,16 @@ Here is how much of TeX's memory you used:
  20737 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,5n,42p,10361b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf
--dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
-times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb
-i8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on FinalPaper.pdf (16 pages, 2702244 bytes).
+{/usr/local/texlive/2016/texmf-dist
+/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times
+/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmbi8a.p
+fb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on FinalPaper.pdf (16 pages, 2703995 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  63 compressed objects within 1 object stream
