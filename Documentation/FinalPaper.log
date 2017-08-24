@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  23 AUG 2017 22:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  24 AUG 2017 21:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -391,39 +391,48 @@ Package: l3keys2e 2016/05/18 v6512 LaTeX2e option processing using LaTeX3 keys
 Package: translator 2010/06/12 ver 1.10
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/beamer/translator/translator-lang
-uage-mappings.tex))) (./FinalPaper.aux)
+uage-mappings.tex)))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count138
+\float@exts=\toks18
+\float@box=\box53
+\@float@everytoks=\toks19
+\@floatcapt=\box54
+)
+(./FinalPaper.aux)
 \openout1 = `FinalPaper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 20.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count138
+\scratchcounter=\count139
 \scratchdimen=\dimen152
-\scratchbox=\box53
-\nofMPsegments=\count139
-\nofMParguments=\count140
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count141
+\scratchbox=\box55
+\nofMPsegments=\count140
+\nofMParguments=\count141
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count142
 \MPscratchDim=\dimen153
-\MPnumerator=\count142
-\makeMPintoPDFobject=\count143
-\everyMPtoPDFconversion=\toks19
+\MPnumerator=\count143
+\makeMPintoPDFobject=\count144
+\everyMPtoPDFconversion=\toks21
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -478,331 +487,314 @@ Dictionary: translator-basic-dictionary, Language: English
 (/usr/local/texlive/2016/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2016/03/01 v2.6q siunitx: Abbreviated units
 )
-\c__siunitx_mathsf_int=\count144
+\c__siunitx_mathsf_int=\count145
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 19.
+(Font)              <12> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 19.
+(Font)              <8> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 19.
-\c__siunitx_mathtt_int=\count145
+(Font)              <6> on input line 20.
+\c__siunitx_mathtt_int=\count146
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 22.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 23.
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 35.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 36.
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
 []|\OT1/ptm/m/n/12 Unique
  []
 
 
-Underfull \hbox (badness 4859) in paragraph at lines 62--62
+Underfull \hbox (badness 4859) in paragraph at lines 63--63
 []|\OT1/ptm/m/n/12 Simulate the Enigma
  []
 
 
-Underfull \hbox (badness 6141) in paragraph at lines 67--67
+Underfull \hbox (badness 6141) in paragraph at lines 68--68
 \OT1/ptm/m/n/12 and eval-u-ate av-er-age
  []
 
 
-Underfull \vbox (badness 10000) detected at line 69
+Underfull \vbox (badness 10000) detected at line 70
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
 [3] <enigmaDiagram.png, id=15, 963.6pt x 542.025pt>
 File: enigmaDiagram.png Graphic file (type png)
  <use enigmaDiagram.png>
-Package pdftex.def Info: enigmaDiagram.png used on input line 93.
+Package pdftex.def Info: enigmaDiagram.png used on input line 94.
 (pdftex.def)             Requested size: 461.13188pt x 259.38333pt.
 
 <StageOneBOMBE.png, id=17, 950.21666pt x 307.81667pt>
 File: StageOneBOMBE.png Graphic file (type png)
  <use StageOneBOMBE.png>
-Package pdftex.def Info: StageOneBOMBE.png used on input line 101.
+Package pdftex.def Info: StageOneBOMBE.png used on input line 102.
 (pdftex.def)             Requested size: 461.13188pt x 149.38483pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<StageTwoBOMBE.png, id=18, 692.5875pt x 433.62pt>
+[4 <./enigmaDiagram.png>] <StageTwoBOMBE.png, id=22, 692.5875pt x 433.62pt>
 File: StageTwoBOMBE.png Graphic file (type png)
- <use StageTwoBOMBE.png>
-Package pdftex.def Info: StageTwoBOMBE.png used on input line 109.
+
+<use StageTwoBOMBE.png>
+Package pdftex.def Info: StageTwoBOMBE.png used on input line 110.
 (pdftex.def)             Requested size: 461.13188pt x 288.71759pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
-[4 <./enigmaDiagram.png>] [5 <./StageOneBOMBE.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+[5 <./StageOneBOMBE.png> <./StageTwoBOMBE.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
-
- []
-
-[6 <./StageTwoBOMBE.png>]
-Underfull \vbox (badness 10000) detected at line 146
+Underfull \vbox (badness 10000) detected at line 147
  []
 
 <BOMBEone.png, id=31, 404.51125pt x 343.2825pt>
 File: BOMBEone.png Graphic file (type png)
  <use BOMBEone.png>
-Package pdftex.def Info: BOMBEone.png used on input line 152.
+Package pdftex.def Info: BOMBEone.png used on input line 153.
 (pdftex.def)             Requested size: 230.56593pt x 195.6678pt.
-
-<BOMBEtwo.png, id=32, 656.4525pt x 460.72125pt>
+ [7]
+<BOMBEtwo.png, id=36, 656.4525pt x 460.72125pt>
 File: BOMBEtwo.png Graphic file (type png)
  <use BOMBEtwo.png>
-Package pdftex.def Info: BOMBEtwo.png used on input line 159.
+Package pdftex.def Info: BOMBEtwo.png used on input line 160.
 (pdftex.def)             Requested size: 461.13188pt x 323.64154pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<BOMBEthree.png, id=33, 740.7675pt x 538.01pt>
+<BOMBEthree.png, id=37, 740.7675pt x 538.01pt>
 File: BOMBEthree.png Graphic file (type png)
  <use BOMBEthree.png>
-Package pdftex.def Info: BOMBEthree.png used on input line 166.
+Package pdftex.def Info: BOMBEthree.png used on input line 167.
 (pdftex.def)             Requested size: 461.13188pt x 334.9173pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7 <./BOMBEone.png>] [8 <./BOMBEtwo.png>]
-<BOMBEfour.png, id=43, 651.43375pt x 542.025pt>
+ [8 <./BOMBEone.png> <./BOMBEtwo.png>] [9 <./BOMBEthree.png>]
+<BOMBEfour.png, id=47, 651.43375pt x 542.025pt>
 File: BOMBEfour.png Graphic file (type png)
  <use BOMBEfour.png>
-Package pdftex.def Info: BOMBEfour.png used on input line 177.
+Package pdftex.def Info: BOMBEfour.png used on input line 178.
 (pdftex.def)             Requested size: 461.13188pt x 383.69908pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[9 <./BOMBEthree.png>] <BOMBEfive.png, id=48, 687.56876pt x 544.0325pt>
+ [10 <./BOMBEfour.png>] <BOMBEfive.png, id=52, 687.56876pt x 544.0325pt>
 File: BOMBEfive.png Graphic file (type png)
 
 <use BOMBEfive.png>
-Package pdftex.def Info: BOMBEfive.png used on input line 185.
+Package pdftex.def Info: BOMBEfive.png used on input line 186.
 (pdftex.def)             Requested size: 461.13188pt x 364.86514pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[10 <./BOMBEfour.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
+ [11 <./BOMBEfive.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
-
- []
-
-[11 <./BOMBEfive.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 259
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 262--262
-[]|\OT1/ptm/m/n/12 Correct Set-ting First
- []
-
-
-Underfull \hbox (badness 2165) in paragraph at lines 262--262
-[]|\OT1/ptm/m/n/12 Correct Set-ting Last
- []
-
-
-Underfull \vbox (badness 10000) detected at line 266
- []
-
-
-Overfull \hbox (1.80777pt too wide) in paragraph at lines 279--280
-[]\OT1/ptm/m/n/12 The strengths of the project mainly lie in the sim-plic-ity o
-f the par-al-lelism ap-plied, the BOMBE
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
+Underfull \vbox (badness 10000) detected at line 260
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 263--263
+[]|\OT1/ptm/m/n/12 Correct Set-ting First
+ []
+
+
+Underfull \hbox (badness 2165) in paragraph at lines 263--263
+[]|\OT1/ptm/m/n/12 Correct Set-ting Last
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 267
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--284
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
 
  []
 
-[18] (./FinalPaper.bbl) [19] (./FinalPaper.aux) ) 
+(./FinalPaper.bbl [19]
+Overfull \hbox (2005.8385pt too wide) in paragraph at lines 22--27
+\OT1/ptm/b/n/12 URL: \OT1/ptm/m/it/12 http://discover.durham.ac.uk/primo[]libra
+ry/libweb/action/display.do?tabs=detailsTab&ct=display&fn=search&doc=44DUR[]LMS
+[]DS.b26214969&indx=8&recIds=44DUR[]LMS[]DS.b26214969&recIdxs=7&elementId=7&ren
+derMode=poppedOut&displayMode=full&frbrVersion=2&frbg=&&dscnt=0&scp.scps=scope%
+3A%2844DUR%29%2CEbsco44DURb%2CEbsco44DURa%2Cprimo[]central[]multiple[]fe&mode=B
+asic&vid=44DUR[]VU1&srt=rank&tab=default[]tab&vl(freeText0)=parallel
+ []
+
+) [20] (./FinalPaper.aux) ) 
 Here is how much of TeX's memory you used:
- 11310 strings out of 493014
- 240041 string characters out of 6133351
- 252834 words of memory out of 5000000
- 14767 multiletter control sequences out of 15000+600000
+ 11386 strings out of 493014
+ 241051 string characters out of 6133351
+ 256477 words of memory out of 5000000
+ 14839 multiletter control sequences out of 15000+600000
  20737 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,9n,42p,10361b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf
--dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
-times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb
-i8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on FinalPaper.pdf (19 pages, 2753659 bytes).
+ 38i,9n,42p,10379b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/
+base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on FinalPaper.pdf (20 pages, 2758615 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
+ 119 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

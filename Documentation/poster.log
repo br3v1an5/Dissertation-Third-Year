@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  22 AUG 2017 18:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  24 AUG 2017 22:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1833,6 +1833,10 @@ Overfull \hbox (22.491pt too wide) in paragraph at lines 143--143
  [][]  
  []
 
+
+Overfull \vbox (25.34695pt too high) detected at line 143
+ []
+
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png used on input line 143.
@@ -1868,7 +1872,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
 Here is how much of TeX's memory you used:
  27204 strings out of 493014
  547473 string characters out of 6133351
- 674736 words of memory out of 5000000
+ 677841 words of memory out of 5000000
  30251 multiletter control sequences out of 15000+600000
  23062 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1880,7 +1884,7 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.p
 fb>
-Output written on poster.pdf (1 page, 522709 bytes).
+Output written on poster.pdf (1 page, 522898 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  32 compressed objects within 1 object stream

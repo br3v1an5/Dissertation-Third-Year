@@ -1,21 +1,42 @@
 \begin{thebibliography}{xx}
 
+\harvarditem{Anna \harvardand\ Elzbieta}{2014}{Anna2014}
+Anna, B. \harvardand\ Elzbieta, R.  \harvardyearleft 2014\harvardyearright ,
+  `{The Cryptanalysis of the Enigma Cipher. The Plugboard and the Cryptologic
+  Bomb}', {\em Computer Science} {\bf 15}(4),~365.
+\newline\harvardurl{https://journals.agh.edu.pl/csci/article/view/1175}
+
 \harvarditem{{\em {Enigma -- Britannica Academic}}}{n.d.}{Brit}
 {\em {Enigma -- Britannica Academic}}  \harvardyearleft n.d.\harvardyearright .
 \newline\harvardurl{http://academic.eb.com.ezphost.dur.ac.uk/levels/collegiate/article/32677}
+
+\harvarditem{Lin \harvardand\ Snyder}{2009}{Lin2009}
+Lin, Y.~C. \harvardand\ Snyder, L.  \harvardyearleft 2009\harvardyearright ,
+  {\em {Principles of parallel programming}}, Pearson/Addison Wesley.
 
 \harvarditem{{\em {Navy M3/M4 Enigma Machine Emulator}}}{n.d.}{Enig}
 {\em {Navy M3/M4 Enigma Machine Emulator}}  \harvardyearleft
   n.d.\harvardyearright .
 \newline\harvardurl{http://enigma.louisedade.co.uk/enigma.html}
 
+\harvarditem{Pacheco}{2011}{Pacheco2011}
+Pacheco, P.~S.  \harvardyearleft 2011\harvardyearright , {\em {An introduction
+  to parallel programming}}, Morgan Kaufmann.
+\newline\harvardurl{http://discover.durham.ac.uk/primo{\_}library/libweb/action/display.do?tabs=detailsTab{\&}ct=display{\&}fn=search{\&}doc=44DUR{\_}LMS{\_}DS.b26214969{\&}indx=8{\&}recIds=44DUR{\_}LMS{\_}DS.b26214969{\&}recIdxs=7{\&}elementId=7{\&}renderMode=poppedOut{\&}displayMode=full{\&}frbrVersion=2{\&}frbg={\&}{\&}dscnt=0{\&}scp.scps=scope{\%}3A{\%}2844DUR{\%}29{\%}2CEbsco44DURb{\%}2CEbsco44DURa{\%}2Cprimo{\_}central{\_}multiple{\_}fe{\&}mode=Basic{\&}vid=44DUR{\_}VU1{\&}srt=rank{\&}tab=default{\_}tab{\&}vl(freeText0)=parallel
+  programming{\&}dum=true{\&}dstmp=1503599723862}
+
 \harvarditem{Stoler}{2007}{Stoler2007}
 Stoler, M.~S.  \harvardyearleft 2007\harvardyearright , `{Re-engineering the
   Enigma Cipher}'.
 
-\harvarditem{{\em {The Turing Bombe - Cribs and Menus}}}{n.d.}{Bombe}
-{\em {The Turing Bombe - Cribs and Menus}}  \harvardyearleft
-  n.d.\harvardyearright .
+\harvarditem{{\em {The Turing Bombe - Cribs and Menus}}}{n.d.{\em a}}{}
+{\em {The Turing Bombe - Cribs and Menus}}  \harvardyearleft n.d.{\em
+  a}\harvardyearright .
+\newline\harvardurl{http://www.ellsbury.com/{\%}5C/bombe1.htm}
+
+\harvarditem{{\em {The Turing Bombe - Cribs and Menus}}}{n.d.{\em b}}{Bombe}
+{\em {The Turing Bombe - Cribs and Menus}}  \harvardyearleft n.d.{\em
+  b}\harvardyearright .
 \newline\harvardurl{http://www.ellsbury.com/{\%}5C/bombe1.htm}
 
 \end{thebibliography}

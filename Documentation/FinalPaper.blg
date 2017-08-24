@@ -3,44 +3,57 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: FinalPaper.aux
 The style file: agsm.bst
 Database file #1: REF.bib
-You've used 4 entries,
+Repeated entry---line 12 of file REF.bib
+ : @misc{
+ :       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 17 of file REF.bib
+ : @misc{
+ :       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 53 of file REF.bib
+ : @article{Stoler2007
+ :                    ,
+I'm skipping whatever remains of this entry
+You've used 8 entries,
             2909 wiz_defined-function locations,
-            656 strings with 5108 characters,
-and the built_in function-call counts, 8478 in all, are:
-= -- 1459
-> -- 24
+            680 strings with 6103 characters,
+and the built_in function-call counts, 19122 in all, are:
+= -- 3190
+> -- 142
 < -- 0
-+ -- 617
-- -- 7
-* -- 708
-:= -- 1631
-add.period$ -- 4
-call.type$ -- 4
-change.case$ -- 38
-chr.to.int$ -- 4
-cite$ -- 4
-duplicate$ -- 54
-empty$ -- 99
-format.name$ -- 9
-if$ -- 1588
-int.to.chr$ -- 5
++ -- 1397
+- -- 42
+* -- 1601
+:= -- 3795
+add.period$ -- 8
+call.type$ -- 8
+change.case$ -- 86
+chr.to.int$ -- 7
+cite$ -- 8
+duplicate$ -- 115
+empty$ -- 213
+format.name$ -- 58
+if$ -- 3519
+int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 1
-newline$ -- 18
-num.names$ -- 10
-pop$ -- 31
+missing$ -- 6
+newline$ -- 33
+num.names$ -- 40
+pop$ -- 58
 preamble$ -- 1
-purify$ -- 45
+purify$ -- 100
 quote$ -- 0
-skip$ -- 50
+skip$ -- 92
 stack$ -- 0
-substring$ -- 1924
-swap$ -- 22
-text.length$ -- 26
+substring$ -- 4265
+swap$ -- 36
+text.length$ -- 72
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 16
+type$ -- 28
 warning$ -- 0
-while$ -- 33
+while$ -- 101
 width$ -- 0
-write$ -- 46
+write$ -- 95
+(There were 3 error messages)
