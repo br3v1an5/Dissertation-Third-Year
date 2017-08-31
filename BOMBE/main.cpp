@@ -23,9 +23,9 @@ using namespace std;
 char* BOMBEplaintext;
 char* BOMBEciphertext;
 
-int input_plugboard_data [] = {4,22,13,17,24,20,14,21,11,23,1,9,10,15,12,7,16,2,8,19,5,25,3,0,18,6};
-int input_reflector_data [] = {25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0};
-int input_rotors_data [] = {1,2,3};
+int input_plugboard_data [] = {23,25,14,13,6,21,20,16,8,12,9,5,17,22,18,15,19,7,10,1,24,2,4,3,11,0};
+int input_reflector_data [] = {19,10,24,18,2,6,20,16,9,1,5,23,0,8,25,21,22,12,7,4,11,14,17,13,3,15};
+int input_rotors_data [] = {7,2,5};
 int input_displacement_data [] = {0,0,0};
 
 
