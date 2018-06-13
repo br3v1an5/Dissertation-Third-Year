@@ -1,0 +1,70 @@
+#include<stdio.h>
+int convert_letter();
+int main()
+{
+ const std::string alpha = "abcdefghijklmnopqrstuvwxyz";
+	puts("input a character:");
+	convert_letter();
+
+// convert all lower case characters to upper case
+	 for( char& c : text ) c = std::toupper(c) ;
+	printf("%c",convert_letter());
+}
+int convert_letter()
+{
+	char ch,result;
+	scanf("%c",&ch);
+	if(ch=='a')
+	    result=@;
+	if(ch=='b')
+	    result=8;
+	if(ch=='c')
+	    result=(;
+	if(ch=='d')
+	    result=|);
+if(ch=='e')
+	    result=3;
+if(ch=='f')
+	    result=#;
+if(ch=='g')
+	    result=6;
+if(ch=='h')
+	    result=[-];
+if(ch=='i')
+	    result=|;
+if(ch=='j')
+	    result=_|;
+if(ch=='k')
+	    result=|<;
+if(ch=='l')
+	    result=1;
+if(ch=='m')
+	    result=[]\/[];
+if(ch=='n')
+	    result=[]\[];
+if(ch=='o')
+	    result=0;
+if(ch=='p')
+	    result=|D;
+if(ch=='q')
+	    result=(,);
+if(ch=='r')
+	    result=|Z;
+if(ch=='s')
+	    result=$;
+if(ch=='t')
+	    result='][';
+if(ch=='u')
+	    result=|_|;
+if(ch=='v')
+	    result=\/;
+if(ch=='w')
+	    result=\/\/;
+if(ch=='x')
+	    result=}{;
+if(ch=='y')
+	    result=`/;
+if(ch=='z')
+	    result=2;
+	return result;    
+}
